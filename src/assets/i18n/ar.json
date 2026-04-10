@@ -1,0 +1,18 @@
+{
+    "title": "اهلا بك",
+    "home": "Home",
+    "navbar": {
+        "dashboard": "لوحة القيادة",
+        "donors": "المتبرعون",
+        "donations": "العمليات",
+        "bloodTesting": "فحصوصات الدم",
+        "inventory": "المخزون",
+        "bloodDisposal": "إتلاف الدم",
+        "extraction": "استخلاص",
+        "bloodSupply": "توريد الدم",
+        "request": "طلبات",
+        "bloodIssue": "نقل الدم",
+        "reports": "التقارير",
+        "search": "بحث..."
+    }
+}

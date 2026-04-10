@@ -1,3 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
-
 @import 'tailwindcss';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Arabic:wght@100..900&display=swap');
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+  --font-arabic: "Noto Sans Arabic", sans-serif;
+  
+  --color-primary: #d33131;
+  --color-background-light: #f8f6f6;
+  --color-background-dark: #201212;
+   --radius: 0.25rem; 
+   --radius-lg: .5rem; 
+   --radius-xl:.75rem; 
+   --radius-full: 999rem; 
+}
+
+[lang="ar"] {
+  body{
+    font-family: var(--font-arabic);
+  }
+}

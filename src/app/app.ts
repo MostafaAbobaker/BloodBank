@@ -1,5 +1,9 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Language } from './shared/services/language';
+import { TranslateService } from '@ngx-translate/core';
+import translationsEN from "../assets/i18n/en.json";
+import translationsAR from "../assets/i18n/ar.json";
 
 @Component({
   selector: 'app-root',
@@ -8,5 +12,8 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('BloodBank');
+  constructor(private translate: TranslateService) {
+        this.translate.setTranslation('en', translationsEN);
+        this.translate.setTranslation('ar', translationsAR);
+    }
 }

@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { Login } from './core/auth/login/login';
+import { Layout } from './core/layout/layout';
 
 export const routes: Routes = [
-  {path:'',component:Login}
+  {path:'',component:Layout}
 ];
