@@ -64,6 +64,15 @@
     "description":"Show the details of the blood donor in the secure system",
     "export":"Export",
     "newEntry":"New Entry",
+    "nameAr":"Name (Arabic)",
+    "ID":"National ID",
+    "DateOfBirth":"Date of Birth",
+    "Gender":"Gender",
+    "Occupation":"Occupation",
+    "MobileNumber":"Mobile",
+    "Email":"Email",
+    "BloodType":"Blood Type",
+    "actions":"Actions",
     "registration":{
       "title":"Donor Registration",
       "description":"Register a new blood donor in the secure system",
@@ -90,8 +99,8 @@
       "selectType":"Select Type",
       "medicalHistory":"Medical History",
       "additionalNotes":"Additional Notes",
-      "cubmit":"Clear",
-      "Register":"Register Donor"
+      "clear":"Clear",
+      "register":"Register Donor"
     }
   },
   "footer": {

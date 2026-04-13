@@ -22,211 +22,14 @@
 <div
     class="bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm ">
     <div class="px-6 py-4 border-b border-slate-100 dark:border-slate-700 flex justify-between items-center">
-        <h3 class="font-bold">Donor List | قائمة المخزون</h3>
+        <h3 class="font-bold">{{"donors.title" | translate}}</h3>
         <div class="text-xs text-slate-400">Showing 1-10 of 1,452 units</div>
     </div>
     <div class="">
-        <!-- <table class="w-full text-left border-collapse">
-                        <thead>
-                            <tr
-                                class="bg-slate-50 dark:bg-slate-900/50 border-b border-slate-100 dark:border-slate-700">
-                                <th class="px-6 py-4 text-xs font-black text-slate-500 uppercase tracking-wider">Barcode
-                                    | الباركود</th>
-                                <th class="px-6 py-4 text-xs font-black text-slate-500 uppercase tracking-wider">Group |
-                                    الفصيلة</th>
-                                <th class="px-6 py-4 text-xs font-black text-slate-500 uppercase tracking-wider">
-                                    Component | المكون</th>
-                                <th class="px-6 py-4 text-xs font-black text-slate-500 uppercase tracking-wider">Status
-                                    | الحالة</th>
-                                <th class="px-6 py-4 text-xs font-black text-slate-500 uppercase tracking-wider">Expiry
-                                    | الانتهاء</th>
-                                <th class="px-6 py-4 text-xs font-black text-slate-500 uppercase tracking-wider">
-                                    Location | الموقع</th>
-                                <th class="px-6 py-4 text-xs font-black text-slate-500 uppercase tracking-wider">Actions
-                                    | إجراءات</th>
-                            </tr>
-                        </thead>
-                        <tbody class="divide-y divide-slate-100 dark:divide-slate-700">
-                            <tr class="hover:bg-slate-50 dark:hover:bg-slate-900/30 transition-colors">
-                                <td class="px-6 py-4">
-                                    <div class="flex flex-col">
-                                        <span
-                                            class="font-mono font-bold text-slate-900 dark:text-slate-100">#BB-882190</span>
-                                        <span class="text-[10px] text-slate-400">Source: Central Bank</span>
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4">
-                                    <span
-                                        class="inline-flex items-center justify-center size-8 rounded-full bg-primary/10 text-primary font-bold text-sm">O-</span>
-                                </td>
-                                <td class="px-6 py-4 text-sm font-medium">Whole Blood</td>
-                                <td class="px-6 py-4">
-                                    <span
-                                        class="px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400">
-                                        Available | متوفر
-                                    </span>
-                                </td>
-                                <td class="px-6 py-4">
-                                    <div class="flex flex-col">
-                                        <span class="text-sm">2024-10-15</span>
-                                        <span class="text-[10px] text-emerald-600 font-bold">22 Days left</span>
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4">
-                                    <div class="flex items-center gap-1.5 text-xs">
-                                        <span class="material-symbols-outlined text-sm text-slate-400">ac_unit</span>
-                                        Fridge B-04
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4">
-                                    <div class="flex gap-2">
-                                        <button
-                                            class="p-1.5 rounded hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-500"
-                                            title="Reserve">
-                                            <span class="material-symbols-outlined text-lg">bookmark_add</span>
-                                        </button>
-                                        <button
-                                            class="p-1.5 rounded hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-500"
-                                            title="Transfer">
-                                            <span class="material-symbols-outlined text-lg">move_item</span>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="hover:bg-slate-50 dark:hover:bg-slate-900/30 transition-colors">
-                                <td class="px-6 py-4">
-                                    <div class="flex flex-col">
-                                        <span
-                                            class="font-mono font-bold text-slate-900 dark:text-slate-100">#BB-992144</span>
-                                        <span class="text-[10px] text-slate-400">Source: Donor #771</span>
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4">
-                                    <span
-                                        class="inline-flex items-center justify-center size-8 rounded-full bg-primary/10 text-primary font-bold text-sm">A+</span>
-                                </td>
-                                <td class="px-6 py-4 text-sm font-medium">Platelets</td>
-                                <td class="px-6 py-4">
-                                    <span
-                                        class="px-2.5 py-1 rounded-full text-xs font-bold bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400">
-                                        Near Expiry | قريب
-                                    </span>
-                                </td>
-                                <td class="px-6 py-4">
-                                    <div class="flex flex-col">
-                                        <span class="text-sm">2023-09-24</span>
-                                        <span class="text-[10px] text-amber-600 font-bold">2 Days left</span>
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4">
-                                    <div class="flex items-center gap-1.5 text-xs">
-                                        <span class="material-symbols-outlined text-sm text-slate-400">ac_unit</span>
-                                        Agitator A-12
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4">
-                                    <div class="flex gap-2">
-                                        <button
-                                            class="p-1.5 rounded hover:bg-slate-200 dark:hover:bg-slate-700 text-primary"
-                                            title="Issue Now">
-                                            <span class="material-symbols-outlined text-lg">send</span>
-                                        </button>
-                                        <button
-                                            class="p-1.5 rounded hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-500">
-                                            <span class="material-symbols-outlined text-lg">more_vert</span>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="bg-red-50/50 dark:bg-red-900/10 hover:bg-red-100/50 transition-colors">
-                                <td class="px-6 py-4">
-                                    <div class="flex flex-col opacity-60">
-                                        <span
-                                            class="font-mono font-bold text-slate-900 dark:text-slate-100">#BB-112005</span>
-                                        <span class="text-[10px] text-slate-400">Source: Mobile Clinic</span>
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4">
-                                    <span
-                                        class="inline-flex items-center justify-center size-8 rounded-full bg-slate-200 text-slate-600 font-bold text-sm">AB-</span>
-                                </td>
-                                <td class="px-6 py-4 text-sm font-medium opacity-60">Plasma</td>
-                                <td class="px-6 py-4">
-                                    <span
-                                        class="px-2.5 py-1 rounded-full text-xs font-bold bg-red-100 text-red-700 dark:bg-red-900/40 dark:text-red-400">
-                                        Expired | منتهي
-                                    </span>
-                                </td>
-                                <td class="px-6 py-4">
-                                    <div class="flex flex-col">
-                                        <span class="text-sm line-through text-slate-400">2023-09-20</span>
-                                        <span class="text-[10px] text-red-600 font-bold">Expired 3 days ago</span>
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4 opacity-60">
-                                    <div class="flex items-center gap-1.5 text-xs">
-                                        <span class="material-symbols-outlined text-sm">ac_unit</span>
-                                        Freezer F-01
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4">
-                                    <button
-                                        class="flex items-center gap-1 bg-red-600 text-white px-3 py-1 rounded text-[10px] font-bold uppercase tracking-tighter">
-                                        <span class="material-symbols-outlined text-xs">delete_forever</span>
-                                        Discard | إتلاف
-                                    </button>
-                                </td>
-                            </tr>
-                            <tr class="hover:bg-slate-50 dark:hover:bg-slate-900/30 transition-colors">
-                                <td class="px-6 py-4">
-                                    <div class="flex flex-col">
-                                        <span
-                                            class="font-mono font-bold text-slate-900 dark:text-slate-100">#BB-223491</span>
-                                        <span class="text-[10px] text-slate-400">Source: Internal Donor</span>
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4">
-                                    <span
-                                        class="inline-flex items-center justify-center size-8 rounded-full bg-primary/10 text-primary font-bold text-sm">B-</span>
-                                </td>
-                                <td class="px-6 py-4 text-sm font-medium">RBC</td>
-                                <td class="px-6 py-4">
-                                    <span
-                                        class="px-2.5 py-1 rounded-full text-xs font-bold bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400">
-                                        Reserved | محجوز
-                                    </span>
-                                </td>
-                                <td class="px-6 py-4">
-                                    <div class="flex flex-col">
-                                        <span class="text-sm">2024-11-02</span>
-                                        <span class="text-[10px] text-slate-500 font-bold">40 Days left</span>
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4">
-                                    <div class="flex items-center gap-1.5 text-xs">
-                                        <span class="material-symbols-outlined text-sm text-slate-400">ac_unit</span>
-                                        Fridge A-09
-                                    </div>
-                                </td>
-                                <td class="px-6 py-4">
-                                    <div class="flex gap-2">
-                                        <button
-                                            class="p-1.5 rounded hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-500"
-                                            title="Release">
-                                            <span class="material-symbols-outlined text-lg">lock_open</span>
-                                        </button>
-                                        <button
-                                            class="p-1.5 rounded hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-500">
-                                            <span class="material-symbols-outlined text-lg">visibility</span>
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>  -->
-        <p-table #dt1
-        dataKey="id" [value]="customers" [paginator]="true" [rows]="5" class="w-full text-left border-collapse"
-            [rowsPerPageOptions]="[5, 10, 20]" [globalFilterFields]="['name', 'country.name', 'representative.name', 'status']" showGridlines>
+     
+    <p-table #dt1
+        dataKey="id" [value]="donors" [paginator]="true" [rows]="5" class="w-full text-left border-collapse"
+            [rowsPerPageOptions]="[5, 10, 20]" [globalFilterFields]="['nameAr', 'ID', 'MobileNumber', 'Email']" showGridlines>
             <ng-template #caption>
                     <div class="flex justify-end">
                         
@@ -236,23 +39,40 @@
             <ng-template #header>
                             <tr
                                 class="bg-slate-50 dark:bg-slate-900/50 border-b border-slate-100 dark:border-slate-700">
-                                <th class="px-6 py-5 text-xs font-black text-slate-500 uppercase tracking-wider">Barcode
-                                    | الباركود</th>
-                                <th class="px-6 py-5 text-xs font-black text-slate-500 uppercase tracking-wider">Group |
-                                    الفصيلة</th>
+                                <th pSortableColumn="nameAr" class="px-6 py-5 text-xs font-black text-slate-500 uppercase tracking-wider">
+                                    {{"donors.nameAr" | translate}}
+                                    <p-sortIcon field="nameAr" />
+                                </th>
+                                    <th class="px-6 py-5 text-xs font-black text-slate-500 uppercase tracking-wider">
+                                        {{"donors.ID" | translate}}
+                                    </th>
+                                <th pSortableColumn="DateOfBirth" class="px-6 py-5 text-xs font-black text-slate-500 uppercase tracking-wider">
+                                    {{"donors.DateOfBirth" | translate}}
+                                    <p-sortIcon field="DateOfBirth" />
+                                </th>
+                                <th pSortableColumn="Gender" class="px-6 py-5 text-xs font-black text-slate-500 uppercase tracking-wider">
+                                    {{"donors.Gender" | translate}}
+                                    <p-sortIcon field="Gender" />
+                                </th>
                                 <th class="px-6 py-5 text-xs font-black text-slate-500 uppercase tracking-wider">
-                                    Component | المكون</th>
-                                <th class="px-6 py-5 text-xs font-black text-slate-500 uppercase tracking-wider">Status
-                                    | الحالة</th>
-                                <th class="px-6 py-5 text-xs font-black text-slate-500 uppercase tracking-wider">Expiry
-                                    | الانتهاء</th>
+                                {{"donors.Occupation" | translate}}
+                                </th>
                                 <th class="px-6 py-5 text-xs font-black text-slate-500 uppercase tracking-wider">
-                                    Location | الموقع</th>
-                                <th class="px-6 py-5 text-xs font-black text-slate-500 uppercase tracking-wider">Actions
-                                    | إجراءات</th>
+                                {{"donors.MobileNumber" | translate}}
+                                </th>
+                                <th class="px-6 py-5 text-xs font-black text-slate-500 uppercase tracking-wider">
+                                {{"donors.Email" | translate}}
+                                </th>
+                                <th pSortableColumn="BloodType" class="px-6 py-5 text-xs font-black text-slate-500 uppercase tracking-wider">
+                                {{"donors.BloodType" | translate}}
+                                <p-sortIcon field="BloodType" />
+                                </th>
+                                <th class="px-6 py-5 text-xs font-black text-slate-500 uppercase tracking-wider">
+                                    {{"donors.actions" | translate}}
+                                </th>
                             </tr>
             </ng-template>
-            <ng-template #body let-customer class="divide-y divide-slate-100 dark:divide-slate-700">
+            <ng-template #body let-donor class="divide-y divide-slate-100 dark:divide-slate-700">
                 <!-- <tr>
                     <td>{{ customer.name }}</td>
                     <td>{{ customer.country.name }}</td>
@@ -261,46 +81,34 @@
                 </tr> -->
                 <tr class="hover:bg-slate-50 dark:hover:bg-slate-900/30 transition-colors">
                                 <td class="px-6 py-4">
-                                    <div class="flex flex-col">
-                                        <span
-                                            class="font-mono font-bold text-slate-900 dark:text-slate-100">#BB-882190</span>
-                                        <span class="text-[10px] text-slate-400">Source: Central Bank</span>
-                                    </div>
+                                    {{donor.nameAr}}
                                 </td>
                                 <td class="px-6 py-4">
-                                    <span
-                                        class="inline-flex items-center justify-center size-8 rounded-full bg-primary/10 text-primary font-bold text-sm">O-</span>
+                                    {{donor.ID}}
                                 </td>
-                                <td class="px-6 py-4 text-sm font-medium">Whole Blood</td>
+                                <td class="px-6 py-4 text-sm font-medium">{{donor.DateOfBirth}}</td>
                                 <td class="px-6 py-4">
-                                    <span
-                                        class="px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400">
-                                        Available | متوفر
-                                    </span>
+                                    {{donor.Gender}}
                                 </td>
                                 <td class="px-6 py-4">
-                                    <div class="flex flex-col">
-                                        <span class="text-sm">2024-10-15</span>
-                                        <span class="text-[10px] text-emerald-600 font-bold">22 Days left</span>
-                                    </div>
+                                    {{donor.Occupation}}
                                 </td>
                                 <td class="px-6 py-4">
-                                    <div class="flex items-center gap-1.5 text-xs">
-                                        <span class="material-symbols-outlined text-sm text-slate-400">ac_unit</span>
-                                        Fridge B-04
-                                    </div>
+                                    {{donor.MobileNumber}}
                                 </td>
                                 <td class="px-6 py-4">
-                                    <div class="flex gap-2">
-                                        <button
-                                            class="p-1.5 rounded hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-500"
-                                            title="Reserve">
-                                            <span class="material-symbols-outlined text-lg">bookmark_add</span>
+                                    {{donor.Email}}
+                                </td>
+                                <td class="px-6 py-4">
+                                    {{donor.BloodType}}
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center gap-2">
+                                        <button class="text-slate-400 hover:text-primary transition-colors">
+                                            <span class="material-symbols-outlined">visibility</span>
                                         </button>
-                                        <button
-                                            class="p-1.5 rounded hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-500"
-                                            title="Transfer">
-                                            <span class="material-symbols-outlined text-lg">move_item</span>
+                                        <button class="text-slate-400 hover:text-red-500 transition-colors">
+                                            <span class="material-symbols-outlined">delete</span>
                                         </button>
                                     </div>
                                 </td>

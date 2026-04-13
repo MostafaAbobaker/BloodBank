@@ -67,6 +67,15 @@
     "description":"عرض تفاصيل المتبرع بالدم في النظام الآمن",
     "export":"تصدير",
     "newEntry":"إضافة جديد",
+    "nameAr":"الاسم (بالعربية)",
+    "ID":"الرقم القومي",
+    "DateOfBirth":"تاريخ الميلاد",
+    "Gender":"الجنس",
+    "Occupation":"المهنة",
+    "MobileNumber":"الجوال",
+    "Email":"البريد الإلكتروني",
+    "BloodType":"فصيلة الدم",
+    "actions":"إجراء",
     "registration":{
       "title":"تسجيل متبرع",
       "description":"تسجيل متبرع جديد في النظام الآمن",
@@ -93,8 +102,8 @@
       "selectType":"اختر الفصيلة",
       "medicalHistory":"التاريخ الطبي",
       "additionalNotes":"ملاحظات إضافية",
-      "cubmit":"مسح",
-      "Register":"تسجيل متبرع"
+      "clear":"مسح",
+      "register":"تسجيل متبرع"
     }
   },
   
