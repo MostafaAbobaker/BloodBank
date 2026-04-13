@@ -1,0 +1,393 @@
+<!-- Filter Bar -->
+ <section class="reports-page flex-1  space-y-6">
+
+     <!-- Filter Bar -->
+            <div
+                class="bg-white dark:bg-background-dark p-4 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-wrap items-end gap-4">
+                <div class="flex-1 min-w-[200px]">
+                    <label class="text-xs font-bold text-slate-500 mb-1 block uppercase">Date Range | الفترة</label>
+                    <div class="flex gap-2">
+                        <input
+                            class="form-input flex-1 h-10 rounded-lg border border-slate-200 dark:bg-slate-800 dark:border-slate-700 text-sm"
+                            type="date" />
+                        <input
+                            class="form-input flex-1 h-10 rounded-lg border border-slate-200 dark:bg-slate-800 dark:border-slate-700 text-sm"
+                            type="date" />
+                    </div>
+                </div>
+                <div class="flex-1 min-w-[140px]">
+                    <label class="text-xs font-bold text-slate-500 mb-1 block uppercase">Blood Group | الفصيلة</label>
+                    <select
+                        class="form-select w-full h-10 rounded-lg border border-slate-200 dark:bg-slate-800 dark:border-slate-700 text-sm">
+                        <option>All Groups | الكل</option>
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                    </select>
+                </div>
+                <div class="flex-1 min-w-[140px]">
+                    <label class="text-xs font-bold text-slate-500 mb-1 block uppercase">Component | المكون</label>
+                    <select
+                        class="form-select w-full h-10 rounded-lg border border-slate-200 dark:bg-slate-800 dark:border-slate-700 text-sm">
+                        <option>All Components | الكل</option>
+                        <option>RBC | كريات حمراء</option>
+                        <option>Plasma | بلازما</option>
+                        <option>Platelets | صفائح</option>
+                        <option>Cryo | كرايو</option>
+                    </select>
+                </div>
+                <div class="flex-1 min-w-[140px]">
+                    <label class="text-xs font-bold text-slate-500 mb-1 block uppercase">Department | القسم</label>
+                    <select
+                        class="form-select w-full h-10 rounded-lg border border-slate-200 dark:bg-slate-800 dark:border-slate-700 text-sm">
+                        <option>All Depts | جميع الأقسام</option>
+                        <option>ER | الطوارئ</option>
+                        <option>Surgery | الجراحة</option>
+                        <option>ICU | العناية المركزة</option>
+                    </select>
+                </div>
+                <button
+                    class="h-10 px-6 bg-slate-900 dark:bg-primary text-white rounded-lg font-bold text-sm flex items-center gap-2">
+                    <span class="material-symbols-outlined text-sm">filter_alt</span>
+                    Apply | تصفية
+                </button>
+            </div>
+            <!-- KPI Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div
+                    class="bg-white dark:bg-background-dark p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span
+                            class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-lg">volunteer_activism</span>
+                        <span
+                            class="text-green-600 text-xs font-bold px-2 py-1 bg-green-50 rounded-full flex items-center gap-1">
+                            <span class="material-symbols-outlined text-xs">trending_up</span> +12%
+                        </span>
+                    </div>
+                    <p class="text-slate-500 text-sm font-medium">Total Donations | إجمالي التبرعات</p>
+                    <p class="text-slate-900 dark:text-slate-100 text-3xl font-bold mt-1">1,250</p>
+                </div>
+                <div
+                    class="bg-white dark:bg-background-dark p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span
+                            class="material-symbols-outlined text-blue-500 bg-blue-50 p-2 rounded-lg">inventory_2</span>
+                        <span
+                            class="text-red-600 text-xs font-bold px-2 py-1 bg-red-50 rounded-full flex items-center gap-1">
+                            <span class="material-symbols-outlined text-xs">trending_down</span> -5%
+                        </span>
+                    </div>
+                    <p class="text-slate-500 text-sm font-medium">Available Units | الوحدات المتاحة</p>
+                    <p class="text-slate-900 dark:text-slate-100 text-3xl font-bold mt-1">482</p>
+                </div>
+                <div
+                    class="bg-white dark:bg-background-dark p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span class="material-symbols-outlined text-green-500 bg-green-50 p-2 rounded-lg">outbox</span>
+                        <span
+                            class="text-green-600 text-xs font-bold px-2 py-1 bg-green-50 rounded-full flex items-center gap-1">
+                            <span class="material-symbols-outlined text-xs">trending_up</span> +8%
+                        </span>
+                    </div>
+                    <p class="text-slate-500 text-sm font-medium">Units Issued | الوحدات المنصرفة</p>
+                    <p class="text-slate-900 dark:text-slate-100 text-3xl font-bold mt-1">890</p>
+                </div>
+                <div
+                    class="bg-white dark:bg-background-dark p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col">
+                    <div class="flex justify-between items-start mb-4">
+                        <span
+                            class="material-symbols-outlined text-slate-500 bg-slate-100 p-2 rounded-lg">delete_sweep</span>
+                        <span
+                            class="text-red-600 text-xs font-bold px-2 py-1 bg-red-50 rounded-full flex items-center gap-1">
+                            <span class="material-symbols-outlined text-xs">trending_down</span> -2%
+                        </span>
+                    </div>
+                    <p class="text-slate-500 text-sm font-medium">Discarded Units | الوحدات التالفة</p>
+                    <p class="text-slate-900 dark:text-slate-100 text-3xl font-bold mt-1">45</p>
+                </div>
+            </div>
+            <!-- Charts Row 1 -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div
+                    class="bg-white dark:bg-background-dark p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="font-bold text-slate-800 dark:text-slate-200">Donation Trends | اتجاهات التبرع</h3>
+                        <div class="flex gap-2">
+                            <button class="text-xs px-3 py-1 bg-primary text-white rounded-full">Monthly</button>
+                            <button
+                                class="text-xs px-3 py-1 bg-slate-100 dark:bg-slate-800 rounded-full">Weekly</button>
+                        </div>
+                    </div>
+                    <div
+                        class="h-64 chart-placeholder rounded-lg flex flex-col items-center justify-end p-4 relative overflow-hidden">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg class="w-full h-full px-2" fill="none" viewbox="0 0 400 150">
+                                <path
+                                    d="M0 120 C 50 110, 80 40, 120 60 C 160 80, 200 20, 240 40 C 280 60, 320 100, 360 80 L 400 90"
+                                    fill="none" stroke="#d33131" stroke-width="3"></path>
+                                <path
+                                    d="M0 120 C 50 110, 80 40, 120 60 C 160 80, 200 20, 240 40 C 280 60, 320 100, 360 80 L 400 90 V 150 H 0 Z"
+                                    fill="url(#grad1)" opacity="0.1"></path>
+                                <defs>
+                                    <lineargradient id="grad1" x1="0%" x2="0%" y1="0%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#d33131;stop-opacity:1"></stop>
+                                        <stop offset="100%" style="stop-color:#d33131;stop-opacity:0"></stop>
+                                    </lineargradient>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="flex justify-between w-full text-[10px] text-slate-400 font-bold">
+                            <span>JAN</span><span>FEB</span><span>MAR</span><span>APR</span><span>MAY</span><span>JUN</span><span>JUL</span>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white dark:bg-background-dark p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                    <h3 class="font-bold text-slate-800 dark:text-slate-200 mb-6">Inventory by Blood Group | المخزون حسب
+                        الفصيلة</h3>
+                    <div class="h-64 flex items-center justify-center gap-8">
+                        <div class="relative size-48">
+                            <svg class="size-full" viewbox="0 0 36 36">
+                                <circle cx="18" cy="18" fill="transparent" r="15.9" stroke="#f1f1f1" stroke-width="3.5">
+                                </circle>
+                                <circle cx="18" cy="18" fill="transparent" r="15.9" stroke="#d33131"
+                                    stroke-dasharray="40 100" stroke-dashoffset="0" stroke-width="3.5"></circle>
+                                <circle cx="18" cy="18" fill="transparent" r="15.9" stroke="#3b82f6"
+                                    stroke-dasharray="20 100" stroke-dashoffset="-40" stroke-width="3.5"></circle>
+                                <circle cx="18" cy="18" fill="transparent" r="15.9" stroke="#10b981"
+                                    stroke-dasharray="15 100" stroke-dashoffset="-60" stroke-width="3.5"></circle>
+                            </svg>
+                            <div class="absolute inset-0 flex flex-col items-center justify-center">
+                                <span class="text-2xl font-bold">482</span>
+                                <span class="text-[10px] text-slate-500 uppercase font-bold">Total Units</span>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 text-xs font-bold">
+                                <div class="size-3 bg-primary rounded-full"></div> <span>O+ (40%)</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs font-bold">
+                                <div class="size-3 bg-blue-500 rounded-full"></div> <span>A+ (20%)</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs font-bold">
+                                <div class="size-3 bg-green-500 rounded-full"></div> <span>B+ (15%)</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-xs font-bold">
+                                <div class="size-3 bg-slate-200 rounded-full"></div> <span>Others (25%)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Charts Row 2 & Donor Card -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div
+                    class="bg-white dark:bg-background-dark p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm lg:col-span-1">
+                    <h3 class="font-bold text-slate-800 dark:text-slate-200 mb-6">Usage by Dept | الاستهلاك حسب القسم
+                    </h3>
+                    <div class="space-y-4 h-64 overflow-y-auto pr-2">
+                        <div class="space-y-1">
+                            <div class="flex justify-between text-xs font-bold mb-1">
+                                <span>ER | الطوارئ</span> <span>340 Units</span>
+                            </div>
+                            <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="flex justify-between text-xs font-bold mb-1">
+                                <span>Surgery | الجراحة</span> <span>210 Units</span>
+                            </div>
+                            <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="flex justify-between text-xs font-bold mb-1">
+                                <span>ICU | العناية</span> <span>180 Units</span>
+                            </div>
+                            <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 50%"></div>
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <div class="flex justify-between text-xs font-bold mb-1">
+                                <span>Pediatrics | الأطفال</span> <span>90 Units</span>
+                            </div>
+                            <div class="w-full bg-slate-100 dark:bg-slate-800 rounded-full h-2">
+                                <div class="bg-primary h-2 rounded-full" style="width: 25%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white dark:bg-background-dark p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm lg:col-span-1">
+                    <h3 class="font-bold text-slate-800 dark:text-slate-200 mb-6">Disposal Reasons | أسباب الإعدام</h3>
+                    <div class="flex flex-col items-center h-64 justify-center">
+                        <div class="flex gap-4 w-full px-4 mb-4">
+                            <div class="flex-1 text-center border-r border-slate-100">
+                                <p class="text-xs text-slate-500 font-bold mb-1">EXPIRY</p>
+                                <p class="text-xl font-bold text-primary">65%</p>
+                            </div>
+                            <div class="flex-1 text-center">
+                                <p class="text-xs text-slate-500 font-bold mb-1">FAILED TEST</p>
+                                <p class="text-xl font-bold text-slate-800 dark:text-slate-100">35%</p>
+                            </div>
+                        </div>
+                        <div class="w-full px-4 space-y-2">
+                            <div class="flex h-10 w-full rounded-lg overflow-hidden">
+                                <div class="bg-primary w-[65%] h-full"></div>
+                                <div class="bg-slate-800 w-[35%] h-full"></div>
+                            </div>
+                            <div class="flex justify-between text-[10px] font-bold text-slate-400">
+                                <span>Time-out | انتهاء الصلاحية</span>
+                                <span>Serology | فشل الفحص</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="bg-white dark:bg-background-dark p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm lg:col-span-1">
+                    <h3 class="font-bold text-slate-800 dark:text-slate-200 mb-6">Patient Blood Balances | أرصدة دم
+                        المرضى</h3>
+                    <div class="space-y-4">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left border-collapse">
+                                <thead>
+                                    <tr
+                                        class="text-[10px] text-slate-500 font-bold uppercase border-b border-slate-100 dark:border-slate-800">
+                                        <th class="pb-2">Patient | المريض</th>
+                                        <th class="pb-2">Group | الفصيلة</th>
+                                        <th class="pb-2 text-right">Units | الرصيد</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-50 dark:divide-slate-800 text-xs font-medium">
+                                    <tr class="hover:bg-slate-50/50 dark:hover:bg-slate-800/20">
+                                        <td class="py-3">Ahmed Hassan</td>
+                                        <td class="py-3 font-bold text-primary">O+</td>
+                                        <td class="py-3 text-right font-bold">2 Units</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50/50 dark:hover:bg-slate-800/20">
+                                        <td class="py-3">Sarah Ali</td>
+                                        <td class="py-3 font-bold text-primary">A-</td>
+                                        <td class="py-3 text-right font-bold">1 Unit</td>
+                                    </tr>
+                                    <tr class="hover:bg-slate-50/50 dark:hover:bg-slate-800/20">
+                                        <td class="py-3">John Doe</td>
+                                        <td class="py-3 font-bold text-primary">B+</td>
+                                        <td class="py-3 text-right font-bold">3 Units</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="mt-4 text-center">
+                            <button class="text-xs font-bold text-primary hover:underline">View All | عرض الكل</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Detailed Table -->
+            <div
+                class="bg-white dark:bg-background-dark rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+                <div class="p-6 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center">
+                    <h3 class="font-bold text-slate-800 dark:text-slate-200">Recent Activity Log | سجل الأنشطة الأخيرة
+                    </h3>
+                    <div class="relative">
+                        <input
+                            class="pl-10 pr-4 py-2 bg-slate-50 dark:bg-slate-800 border-none rounded-lg text-sm focus:ring-1 focus:ring-primary w-64"
+                            placeholder="Search activities..." type="text" />
+                        <span
+                            class="material-symbols-outlined absolute left-3 top-2 text-slate-400 text-sm">search</span>
+                    </div>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left">
+                        <thead
+                            class="bg-slate-50 dark:bg-slate-800/50 text-slate-500 text-xs font-bold uppercase tracking-wider">
+                            <tr>
+                                <th class="px-6 py-4">Date | التاريخ</th>
+                                <th class="px-6 py-4">Category | الفئة</th>
+                                <th class="px-6 py-4">Component | المكون</th>
+                                <th class="px-6 py-4">Blood Group | الفصيلة</th>
+                                <th class="px-6 py-4">Quantity | الكمية</th>
+                                <th class="px-6 py-4">Status | الحالة</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 dark:divide-slate-800 text-sm">
+                            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+                                <td class="px-6 py-4 font-medium">2023-10-24 09:15</td>
+                                <td class="px-6 py-4"><span
+                                        class="px-2 py-1 bg-green-100 text-green-700 rounded text-[10px] font-bold">DONATION</span>
+                                </td>
+                                <td class="px-6 py-4">Whole Blood</td>
+                                <td class="px-6 py-4 font-bold text-primary">A+</td>
+                                <td class="px-6 py-4">1 Unit (450ml)</td>
+                                <td class="px-6 py-4"><span class="flex items-center gap-1">
+                                        <div class="size-2 bg-green-500 rounded-full"></div> Valid
+                                    </span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+                                <td class="px-6 py-4 font-medium">2023-10-24 08:30</td>
+                                <td class="px-6 py-4"><span
+                                        class="px-2 py-1 bg-blue-100 text-blue-700 rounded text-[10px] font-bold">ISSUE</span>
+                                </td>
+                                <td class="px-6 py-4">PRBC</td>
+                                <td class="px-6 py-4 font-bold text-primary">O-</td>
+                                <td class="px-6 py-4">2 Units</td>
+                                <td class="px-6 py-4"><span class="flex items-center gap-1">
+                                        <div class="size-2 bg-blue-500 rounded-full"></div> Transfused
+                                    </span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+                                <td class="px-6 py-4 font-medium">2023-10-23 22:45</td>
+                                <td class="px-6 py-4"><span
+                                        class="px-2 py-1 bg-red-100 text-red-700 rounded text-[10px] font-bold">DISPOSAL</span>
+                                </td>
+                                <td class="px-6 py-4">Platelets</td>
+                                <td class="px-6 py-4 font-bold text-primary">AB+</td>
+                                <td class="px-6 py-4">1 Unit</td>
+                                <td class="px-6 py-4"><span class="flex items-center gap-1">
+                                        <div class="size-2 bg-slate-400 rounded-full"></div> Expired
+                                    </span></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+                                <td class="px-6 py-4 font-medium">2023-10-23 18:12</td>
+                                <td class="px-6 py-4"><span
+                                        class="px-2 py-1 bg-green-100 text-green-700 rounded text-[10px] font-bold">DONATION</span>
+                                </td>
+                                <td class="px-6 py-4">Plasma</td>
+                                <td class="px-6 py-4 font-bold text-primary">B+</td>
+                                <td class="px-6 py-4">1 Unit</td>
+                                <td class="px-6 py-4"><span class="flex items-center gap-1">
+                                        <div class="size-2 bg-yellow-500 rounded-full"></div> Processing
+                                    </span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div
+                    class="px-6 py-4 border-t border-slate-100 dark:border-slate-800 flex justify-between items-center text-xs text-slate-500 font-bold">
+                    <span>Showing 1 to 10 of 2,450 results</span>
+                    <div class="flex gap-1">
+                        <button
+                            class="size-8 flex items-center justify-center border border-slate-200 rounded hover:bg-slate-50">
+                            <span class="material-symbols-outlined text-sm">chevron_left</span>
+                        </button>
+                        <button class="size-8 flex items-center justify-center bg-primary text-white rounded">1</button>
+                        <button
+                            class="size-8 flex items-center justify-center border border-slate-200 rounded hover:bg-slate-50">2</button>
+                        <button
+                            class="size-8 flex items-center justify-center border border-slate-200 rounded hover:bg-slate-50">3</button>
+                        <button
+                            class="size-8 flex items-center justify-center border border-slate-200 rounded hover:bg-slate-50">
+                            <span class="material-symbols-outlined text-sm">chevron_right</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+ </section>

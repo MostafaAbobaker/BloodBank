@@ -1,0 +1,4 @@
+.form-input:focus {
+        border-color: #d33131 !important;
+        ring-color: #d33131 !important;
+      }

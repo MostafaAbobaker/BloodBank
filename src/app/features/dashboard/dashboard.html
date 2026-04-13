@@ -1,1 +1,14 @@
-<p>dashboard works!</p>
+<app-title></app-title>
+<app-kpi></app-kpi>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
+    <app-bar-chart      class="lg:col-span-2 rounded-xl bg-white dark:bg-slate-900     border border-slate-200 dark:border-slate-800 shadow-sm"></app-bar-chart>
+    <!-- <app-bar-chart class="lg:col-span-2 rounded-xl bg-white dark:bg-slate-900 p-6 border border-slate-200 dark:border-slate-800 shadow-sm"></app-bar-chart> -->
+    <app-pie-chart      class="rounded-xl bg-white dark:bg-slate-900     border border-slate-200 dark:border-slate-800 shadow-sm"></app-pie-chart>
+    <!-- <app-pie-chart class="rounded-xl bg-white dark:bg-slate-900 p-6 border border-slate-200 dark:border-slate-800 shadow-sm"></app-pie-chart> -->
+</div>
+<app-pending-requests></app-pending-requests>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+    <app-near-expiry></app-near-expiry>
+    <app-unscreened></app-unscreened>
+</div>
+<app-patient-closed-cases></app-patient-closed-cases>

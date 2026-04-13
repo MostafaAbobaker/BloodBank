@@ -1,0 +1,70 @@
+<!-- Near Expiry Blood Units -->
+<div
+    class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden shadow-sm">
+    <div class="px-6 py-4 border-b border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/50">
+        <h3 class="font-bold text-slate-800 dark:text-white flex items-center gap-2 text-sm">
+            <span class="material-symbols-outlined text-primary">warning</span>
+            {{"dashboard.nearExpiry" | translate}}
+        </h3>
+    </div>
+    <div class="p-4 flex flex-col gap-3">
+        <!-- Red Alert: < 3 days -->
+        <div
+            class="p-3 bg-red-50 dark:bg-red-900/10 border-l-4 border-red-500 rounded flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div
+                    class="size-10 bg-white dark:bg-slate-800 rounded flex items-center justify-center text-primary font-black text-sm border border-red-100">
+                    O-
+                </div>
+                <div>
+                    <p class="text-[11px] font-black uppercase">
+                        Whole Blood
+                    </p>
+                    <p class="text-[10px] text-red-600 font-bold">
+                        Expires in 2 Days
+                    </p>
+                </div>
+            </div>
+            <span class="material-symbols-outlined text-red-500">priority_high</span>
+        </div>
+        <!-- Orange Alert: < 7 days -->
+        <div
+            class="p-3 bg-amber-50 dark:bg-amber-900/10 border-l-4 border-amber-500 rounded flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div
+                    class="size-10 bg-white dark:bg-slate-800 rounded flex items-center justify-center text-amber-600 font-black text-sm border border-amber-100">
+                    B+
+                </div>
+                <div>
+                    <p class="text-[11px] font-black uppercase">
+                        Platelets
+                    </p>
+                    <p class="text-[10px] text-amber-600 font-bold">
+                        Expires in 5 Days
+                    </p>
+                </div>
+            </div>
+            <span class="material-symbols-outlined text-amber-500">history</span>
+        </div>
+       <!--  <div
+            class="p-3 bg-amber-50 dark:bg-amber-900/10 border-l-4 border-amber-500 rounded flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div
+                    class="size-10 bg-white dark:bg-slate-800 rounded flex items-center justify-center text-amber-600 font-black text-sm border border-amber-100">
+                    A+
+                </div>
+                <div>
+                    <p class="text-[11px] font-black uppercase">Plasma</p>
+                    <p class="text-[10px] text-amber-600 font-bold">
+                        Expires in 6 Days
+                    </p>
+                </div>
+            </div>
+            <span class="material-symbols-outlined text-amber-500">history</span>
+        </div> -->
+        <button
+            class="w-full mt-2 py-2 text-[10px] font-bold text-slate-500 border border-slate-200 dark:border-slate-700 rounded-lg hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors uppercase tracking-widest">
+            {{"dashboard.generateWasteReport" | translate}}
+        </button>
+    </div>
+</div>

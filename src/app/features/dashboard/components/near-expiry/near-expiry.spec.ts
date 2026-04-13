@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Login } from './login';
+import { NearExpiry } from './near-expiry';
 
-describe('Login', () => {
-  let component: Login;
-  let fixture: ComponentFixture<Login>;
+describe('NearExpiry', () => {
+  let component: NearExpiry;
+  let fixture: ComponentFixture<NearExpiry>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Login],
+      imports: [NearExpiry],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(Login);
+    fixture = TestBed.createComponent(NearExpiry);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

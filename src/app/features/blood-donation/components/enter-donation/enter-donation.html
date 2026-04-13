@@ -1,0 +1,269 @@
+<!-- Breadcrumbs & Title -->
+ <section class="flex flex-col gap-4">
+
+
+                <div class="flex flex-col gap-2">
+                    <div class="flex items-center gap-2 text-slate-500 text-sm">
+                        <span>Donations / العمليات</span>
+                        <span class="material-symbols-outlined text-sm">chevron_right</span>
+                        <span class="text-primary font-medium">New Entry / تسجيل جديد</span>
+                    </div>
+                    <div class="flex flex-wrap justify-between items-end gap-4 mt-2">
+                        <div>
+                            <h1 class="text-slate-900 dark:text-slate-100 text-3xl font-black tracking-tight">Blood
+                                Donation Entry / تسجيل عملية تبرع بالدم</h1>
+                            <p class="text-slate-500 font-mono mt-1">Ref: <span
+                                    class="text-primary font-bold">DON-2024-001</span></p>
+                        </div>
+                        <div class="flex gap-3">
+                            <button
+                                class="flex items-center gap-2 px-4 py-2 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 rounded-lg text-sm font-bold">
+                                <span class="material-symbols-outlined text-sm">save</span>
+                                <span>Save Draft / حفظ مسودة</span>
+                            </button>
+                            <div
+                                class="flex items-center gap-2 px-4 py-2 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-400 rounded-lg text-sm font-bold border border-orange-200 dark:border-orange-800">
+                                <span class="material-symbols-outlined text-sm">pending</span>
+                                <span>Status: Under Testing / قيد الفحص</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Master Section: General Info -->
+                <section
+                    class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
+                    <div class="flex items-center gap-2 mb-6 border-b border-slate-100 dark:border-slate-800 pb-4">
+                        <span class="material-symbols-outlined text-primary">assignment</span>
+                        <h2 class="text-lg font-bold">General Information / معلومات عامة</h2>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Date /
+                                التاريخ</label>
+                            <div class="relative">
+                                <span
+                                    class="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-slate-400">calendar_today</span>
+                                <input
+                                    class="w-full pl-10 pr-4 py-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none transition-all"
+                                    type="date" value="2024-05-20" />
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Donor /
+                                المتبرع</label>
+                            <div class="relative">
+                                <span
+                                    class="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-slate-400">search</span>
+                                <select
+                                    class="w-full pl-10 pr-4 py-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus:ring-2 focus:ring-primary/20 focus:border-primary outline-none appearance-none">
+                                    <option>Select Donor / اختر المتبرع</option>
+                                    <option selected="">Ahmed Ali (ID: 10293) - A+</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Last Donation Date /
+                                آخر تبرع</label>
+                            <input
+                                class="w-full px-4 py-3 rounded-lg border border-slate-100 dark:border-slate-800 bg-slate-100 dark:bg-slate-950 text-slate-500 cursor-not-allowed"
+                                readonly="" type="text" value="2023-11-15 (187 days ago)" />
+                        </div>
+                        <div class="space-y-2 md:col-span-1">
+                            <label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Donation Type / نوع
+                                التبرع</label>
+                            <div class="flex gap-2 p-1 bg-slate-100 dark:bg-slate-800 rounded-lg">
+                                <label
+                                    class="flex-1 flex items-center justify-center gap-2 py-2 px-4 rounded-md cursor-pointer bg-white dark:bg-slate-700 shadow-sm border border-slate-200 dark:border-slate-600 text-primary font-bold">
+                                    <input checked="" class="hidden" name="dtype" type="radio" />
+                                    <span>Hospital / للمستشفى</span>
+                                </label>
+                                <label
+                                    class="flex-1 flex items-center justify-center gap-2 py-2 px-4 rounded-md cursor-pointer hover:bg-white/50 dark:hover:bg-slate-700/50 transition-all text-slate-600 dark:text-slate-400">
+                                    <input class="hidden" name="dtype" type="radio" />
+                                    <span>For Patient / لمريض</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="space-y-2 md:col-span-2">
+                            <label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Patient Selection /
+                                اختيار المريض</label>
+                            <div class="relative">
+                                <select
+                                    class="w-full px-4 py-3 rounded-lg border border-slate-100 dark:border-slate-800 bg-slate-100 dark:bg-slate-950 text-slate-400 cursor-not-allowed"
+                                    disabled="">
+                                    <option>Select Patient (Only for 'For Patient' type) / اختر المريض</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Medical Screening Section -->
+                <section
+                    class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm">
+                    <div class="flex items-center gap-2 mb-6 border-b border-slate-100 dark:border-slate-800 pb-4">
+                        <span class="material-symbols-outlined text-primary">health_metrics</span>
+                        <h2 class="text-lg font-bold">Medical Screening / الفحص الطبي</h2>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold uppercase tracking-wider text-slate-500">BP / ضغط
+                                الدم</label>
+                            <div class="flex items-center gap-2">
+                                <input
+                                    class="w-full px-3 py-2 rounded border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800"
+                                    placeholder="120/80" type="text" />
+                                <span class="text-xs text-slate-400 font-medium">mmHg</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Hemoglobin /
+                                الهيموجلوبين</label>
+                            <div class="flex items-center gap-2">
+                                <input
+                                    class="w-full px-3 py-2 rounded border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800"
+                                    placeholder="14.5" type="text" />
+                                <span class="text-xs text-slate-400 font-medium">g/dL</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Weight /
+                                الوزن</label>
+                            <div class="flex items-center gap-2">
+                                <input
+                                    class="w-full px-3 py-2 rounded border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800"
+                                    placeholder="75" type="text" />
+                                <span class="text-xs text-slate-400 font-medium">kg</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Height /
+                                الطول</label>
+                            <div class="flex items-center gap-2">
+                                <input
+                                    class="w-full px-3 py-2 rounded border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800"
+                                    placeholder="178" type="text" />
+                                <span class="text-xs text-slate-400 font-medium">cm</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Pulse /
+                                النبض</label>
+                            <div class="flex items-center gap-2">
+                                <input
+                                    class="w-full px-3 py-2 rounded border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800"
+                                    placeholder="72" type="text" />
+                                <span class="text-xs text-slate-400 font-medium">bpm</span>
+                            </div>
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Pulse Rhythm /
+                                وتيرة النبض</label>
+                            <select
+                                class="w-full px-3 py-2 rounded border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800">
+                                <option>Regular / منتظم</option>
+                                <option>Irregular / غير منتظم</option>
+                            </select>
+                        </div>
+                        <div class="sm:col-span-2 space-y-1">
+                            <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Heart &amp; Chest /
+                                القلب والصدر</label>
+                            <input
+                                class="w-full px-3 py-2 rounded border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800"
+                                placeholder="Normal sounds / أصوات طبيعية" type="text" />
+                        </div>
+                        <div class="sm:col-span-4 space-y-1 mt-2">
+                            <label class="text-xs font-bold uppercase tracking-wider text-slate-500">Screening Notes /
+                                ملاحظات الفحص</label>
+                            <textarea
+                                class="w-full px-3 py-2 rounded border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 resize-none"
+                                placeholder="Enter any medical observations..." rows="2"></textarea>
+                        </div>
+                    </div>
+                </section>
+                <!-- Donation Details Section -->
+                <section
+                    class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+                    <div class="p-6 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center">
+                        <div class="flex items-center gap-2">
+                            <span class="material-symbols-outlined text-primary">vaccines</span>
+                            <h2 class="text-lg font-bold">Donation Details / تفاصيل التبرع</h2>
+                        </div>
+                        <button
+                            class="flex items-center gap-2 px-3 py-1.5 bg-primary/10 text-primary rounded-lg text-sm font-bold hover:bg-primary/20 transition-all">
+                            <span class="material-symbols-outlined text-sm">add</span>
+                            <span>Add Row / إضافة سطر</span>
+                        </button>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse">
+                            <thead>
+                                <tr
+                                    class="bg-slate-50 dark:bg-slate-800/50 text-slate-500 text-xs font-bold uppercase tracking-wider">
+                                    <th class="px-6 py-4">Component / المكون</th>
+                                    <th class="px-6 py-4">Blood Type / الفصيلة</th>
+                                    <th class="px-6 py-4">Barcode / الرمز الشريطي</th>
+                                    <th class="px-6 py-4">Exp Date / انتهاء الصلاحية</th>
+                                    <th class="px-6 py-4">Notes / ملاحظات</th>
+                                    <th class="px-6 py-4 text-center">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+                                <tr>
+                                    <td class="px-6 py-4">
+                                        <select
+                                            class="w-full bg-transparent border-none focus:ring-0 p-0 text-sm font-medium">
+                                            <option>Whole Blood / دم كامل</option>
+                                            <option>RBC / كريات حمراء</option>
+                                            <option>Plasma / بلازما</option>
+                                            <option>Platelets / صفائح</option>
+                                        </select>
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        <span class="px-2 py-1 bg-primary/10 text-primary text-xs font-bold rounded">A+
+                                            (Auto)</span>
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        <input
+                                            class="w-full bg-transparent border-none focus:ring-0 p-0 text-sm font-mono text-slate-600 dark:text-slate-400"
+                                            type="text" value="BB-99201-2024" />
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        <input class="w-full bg-transparent border-none focus:ring-0 p-0 text-sm"
+                                            type="date" value="2024-06-25" />
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        <input class="w-full bg-transparent border-none focus:ring-0 p-0 text-sm"
+                                            placeholder="..." type="text" />
+                                    </td>
+                                    <td class="px-6 py-4 text-center">
+                                        <button class="text-slate-300 cursor-not-allowed">
+                                            <span class="material-symbols-outlined">delete</span>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="p-4 bg-primary/5 border-t border-primary/10">
+                        <p class="text-xs text-primary/70 flex items-center gap-2">
+                            <span class="material-symbols-outlined text-[14px]">info</span>
+                            <span>Note: Whole Blood is restricted to 1 row. Platelets/Plasma can support multiple bags
+                                per session. / ملاحظة: الدم الكامل محدود بسطر واحد. الصفائح/البلازما تدعم عدة
+                                أكياس.</span>
+                        </p>
+                    </div>
+                </section>
+                <!-- Footer Action Section -->
+                <div
+                    class="flex flex-col sm:flex-row justify-end items-center gap-4 py-8 border-t border-slate-200 dark:border-slate-800">
+                    <button
+                        class="w-full sm:w-auto px-8 py-4 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-bold rounded-xl hover:bg-slate-300 transition-colors">
+                        Discard / إلغاء
+                    </button>
+                    <button
+                        class="w-full sm:w-auto flex items-center justify-center gap-3 px-10 py-4 bg-primary text-white font-bold rounded-xl shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all">
+                        <span class="material-symbols-outlined">blood_pressure</span>
+                        <span>Create BloodBag &amp; Transaction / إنشاء كيس دم ومعاملة</span>
+                    </button>
+                </div>
+                 </section>

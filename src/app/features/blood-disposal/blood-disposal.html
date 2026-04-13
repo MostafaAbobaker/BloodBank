@@ -1,0 +1,172 @@
+<section class="">
+    <!-- Breadcrumbs -->
+            <div class="flex items-center gap-2 mb-6 text-sm text-slate-500 dark:text-slate-400">
+                <a class="hover:text-primary" href="#">Inventory</a>
+                <span class="material-symbols-outlined text-xs">chevron_right</span>
+                <span class="text-slate-900 dark:text-slate-100 font-medium">Blood Disposal</span>
+            </div>
+            <!-- Page Title -->
+            <div class="mb-8 border-l-4 border-primary pl-4 rtl:border-l-0 rtl:border-r-4 rtl:pr-4">
+                <h1 class="text-3xl font-black text-slate-900 dark:text-slate-100">Blood Disposal | إتلاف وحدات الدم
+                </h1>
+                <p class="text-slate-600 dark:text-slate-400 mt-1">Safely manage and document the disposal of blood
+                    units. | إدارة وتسجيل إتلاف وحدات الدم بشكل آمن.</p>
+            </div>
+            <!-- Header Section: Form Info -->
+            <div
+                class="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 p-6 mb-8">
+                <h3 class="text-lg font-bold mb-6 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-primary">description</span>
+                    Document Information | معلومات المستند
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="flex flex-col gap-2">
+                        <label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Document Code | كود
+                            المستند</label>
+                        <input
+                            class="bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-700 rounded-lg text-slate-500 font-mono"
+                            readonly="" type="text" value="DISP-2024-001" />
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label class="text-sm font-semibold text-slate-700 dark:text-slate-300">Disposal Date | تاريخ
+                            الإتلاف</label>
+                        <div class="relative">
+                            <span
+                                class="material-symbols-outlined absolute left-3 top-2.5 text-slate-400">calendar_today</span>
+                            <input
+                                class="w-full pl-10 border-slate-200 dark:border-slate-700 dark:bg-slate-800 rounded-lg focus:border-primary focus:ring-primary"
+                                type="date" />
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2 md:col-span-2 lg:col-span-1">
+                        <label class="text-sm font-semibold text-slate-700 dark:text-slate-300">General Notes | ملاحظات
+                            عامة</label>
+                        <textarea
+                            class="border-slate-200 dark:border-slate-700 dark:bg-slate-800 rounded-lg focus:border-primary focus:ring-primary placeholder:text-slate-400"
+                            placeholder="Optional internal comments..." rows="1"></textarea>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Content: Disposal Grid -->
+            <div
+                class="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden mb-8">
+                <div
+                    class="p-6 border-b border-slate-100 dark:border-slate-800 flex justify-between items-center bg-slate-50/50 dark:bg-slate-800/50">
+                    <h3 class="text-lg font-bold flex items-center gap-2">
+                        <span class="material-symbols-outlined text-primary">list_alt</span>
+                        Disposal Details | تفاصيل الإتلاف
+                    </h3>
+                    <button
+                        class="flex items-center gap-1 text-primary hover:bg-primary/10 px-3 py-1.5 rounded-lg font-bold text-sm transition-all">
+                        <span class="material-symbols-outlined">add_circle</span>
+                        Add Unit | إضافة وحدة
+                    </button>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left rtl:text-right border-collapse">
+                        <thead>
+                            <tr
+                                class="bg-slate-50 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400 text-xs uppercase tracking-wider font-bold">
+                                <th class="px-6 py-4">Component Type | نوع المكون</th>
+                                <th class="px-6 py-4">Blood Type | الفصيلة</th>
+                                <th class="px-6 py-4">Bag Barcode | باركود الكيس</th>
+                                <th class="px-6 py-4">Reason | سبب الإتلاف</th>
+                                <th class="px-6 py-4">Notes | ملاحظات</th>
+                                <th class="px-6 py-4 text-center">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+                            <!-- Row 1 -->
+                            <tr class="hover:bg-slate-50/50 dark:hover:bg-slate-800/30 transition-colors">
+                                <td class="px-6 py-4">
+                                    <select
+                                        class="w-full border-slate-200 dark:border-slate-700 dark:bg-slate-900 rounded-lg text-sm focus:ring-primary">
+                                        <option>Red Blood Cells (RBC)</option>
+                                        <option>Plasma</option>
+                                        <option>Whole Blood</option>
+                                        <option>Platelets</option>
+                                    </select>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <select
+                                        class="w-full border-slate-200 dark:border-slate-700 dark:bg-slate-900 rounded-lg text-sm focus:ring-primary">
+                                        <option>A+</option>
+                                        <option>A-</option>
+                                        <option>B+</option>
+                                        <option>B-</option>
+                                        <option>O+</option>
+                                        <option>O-</option>
+                                        <option>AB+</option>
+                                        <option>AB-</option>
+                                    </select>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <div class="relative">
+                                        <input
+                                            class="w-full pr-10 border-slate-200 dark:border-slate-700 dark:bg-slate-900 rounded-lg text-sm focus:ring-primary"
+                                            placeholder="Scan or select ID" type="text" />
+                                        <span
+                                            class="material-symbols-outlined absolute right-3 top-2 text-slate-400">barcode_scanner</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <select
+                                        class="w-full border-slate-200 dark:border-slate-700 dark:bg-slate-900 rounded-lg text-sm focus:ring-primary">
+                                        <option>Expired (منتهي الصلاحية)</option>
+                                        <option>Contaminated (تلوث)</option>
+                                        <option>Broken Bag (كيس تالف)</option>
+                                        <option>Hemolysis (تحلل دموي)</option>
+                                        <option>Cold Chain Break (فشل سلسلة التبريد)</option>
+                                    </select>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <input
+                                        class="w-full border-slate-200 dark:border-slate-700 dark:bg-slate-900 rounded-lg text-sm focus:ring-primary"
+                                        placeholder="..." type="text" />
+                                </td>
+                                <td class="px-6 py-4 text-center">
+                                    <button class="text-slate-400 hover:text-primary transition-colors">
+                                        <span class="material-symbols-outlined">delete</span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <!-- Row 2 (Empty state/Add new placeholder logic) -->
+                            <tr class="bg-slate-50/30 dark:bg-slate-800/10">
+                                <td class="px-6 py-8 text-center" colspan="6">
+                                    <button
+                                        class="inline-flex items-center gap-2 py-2 px-4 border-2 border-dashed border-slate-300 dark:border-slate-700 rounded-xl text-slate-500 hover:text-primary hover:border-primary transition-all group">
+                                        <span
+                                            class="material-symbols-outlined group-hover:scale-110 transition-transform">add</span>
+                                        <span class="font-medium">Add another unit for disposal | إضافة وحدة أخرى
+                                            للإتلاف</span>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Warning/Logic Note -->
+            <div class="bg-primary/5 border border-primary/20 rounded-lg p-4 mb-10 flex items-start gap-3">
+                <span class="material-symbols-outlined text-primary mt-0.5">info</span>
+                <p class="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
+                    <strong>Note:</strong> Once finalized, all selected units will be permanently marked as
+                    <strong>'Destroyed'</strong> in the system logs and removed from active inventory.
+                    <br />
+                    <strong>ملاحظة:</strong> بمجرد إتمام العملية، سيتم تمييز جميع الوحدات المختارة كـ
+                    <strong>'تالفة'</strong> في سجلات النظام وإزالتها من المخزون الفعلي.
+                </p>
+            </div>
+            <!-- Bottom Actions -->
+            <div class="flex flex-col sm:flex-row items-center justify-end gap-4 mb-20">
+                <button
+                    class="w-full sm:w-auto px-8 py-3 rounded-lg border border-slate-300 dark:border-slate-700 text-slate-700 dark:text-slate-300 font-bold hover:bg-slate-100 dark:hover:bg-slate-800 transition-all">
+                    Cancel | إلغاء
+                </button>
+                <button
+                    class="w-full sm:w-auto px-10 py-3 rounded-lg bg-primary text-white font-bold hover:bg-primary/90 shadow-lg shadow-primary/20 flex items-center justify-center gap-2 transition-all transform active:scale-95">
+                    <span class="material-symbols-outlined">check_circle</span>
+                    Finalize Disposal | إتمام الإتلاف
+                </button>
+            </div>
+</section>

@@ -1,1 +1,6 @@
-<p>loading works!</p>
+@if (loading()) {
+  <div class="loading-page absolute inset-0 flex items-center justify-center bg-black/90 z-[9999]">
+    <div class="loader"></div>
+  </div>
+}
+

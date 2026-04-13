@@ -21,3 +21,5 @@
     font-family: var(--font-arabic);
   }
 }
+
+@import './assets/style/primeng.css';

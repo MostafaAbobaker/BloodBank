@@ -1,6 +1,5 @@
 {
-  "title": "Hello World",
-  "home": "Home",
+  
   "navbar": {
     "dashboard": "Dashboard",
     "donors": "Donors",
@@ -14,5 +13,59 @@
     "bloodIssue": "Blood Issue",
     "reports": "Reports",
     "search": "Search Barcode..."
+  },
+  "sidebar": {
+    "dashboard": "Dashboard Home",
+    "inventory": "Inventory",
+    "donors": "Donors",
+    "bloodDonation": "Blood Donation",
+    "bloodRequest": "Blood Request Management",
+    "bloodIssue": "Blood Issue",
+    "bloodTesting": "Blood Testing",
+    "bloodSupply": "Blood Supply",
+    "componentExtraction": "Blood Component Extraction",
+    "bloodDisposal": "Blood Disposal",
+    "reports": "Reports & Analytics"
+  },
+  "dashboard":{
+    "title": "Blood Bank Dashboard",
+    "description": "Hospital Medical Center",
+    "bloodGroup":"Blood Group",
+    "component ":"Component",
+    "unitsByBloodGroup":"Units by Blood Group",
+    "componentDistribution":"Component Distribution",
+    "nearExpiry":"Near Expiry",
+    "unscreened":"Unscreened",
+    "addScreeningResults":"Add Screening Results",
+    "generateWasteReport":"Generate Waste Report",
+    "patientClosedCases":"Patient Closed Cases",
+    "kpi":{
+        "totalUnits":"Total Units",
+        "available":"Available",
+        "reserved":"Reserved",
+        "expired":"Expired",
+        "needsDisposal":"Needs Disposal"
+    },
+    "pendingRequests": {
+      "title":"Pending Blood Requests",
+      "viewAll":"View All",
+      "patient":"Patient",
+      "bloodType":"Blood Type",
+      "component":"Component",
+      "quantity":"Quantity",
+      "date":"Date",
+      "status":"Status",
+      "action":"Action",
+      "viewDetails":"View Details"
+    }
+  },
+  "donors":{
+    "title":"Donor List",
+    "description":"Show the details of the blood donor in the secure system",
+    "export":"Export",
+    "newEntry":"New Entry"
+  },
+  "footer": {
+    "copyright": "© 2023 BloodBank Pro Management System. All Rights Reserved."
   }
 }

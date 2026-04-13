@@ -1,0 +1,245 @@
+<section>
+    <!-- Title and Primary Actions -->
+            <div class="flex flex-wrap justify-between items-start gap-4 mb-8">
+                <div class="flex flex-col gap-1">
+                    <h1
+                        class="text-slate-900 dark:text-slate-100 text-3xl font-black tracking-tight flex items-center gap-3">
+                        Blood Testing <span class="text-slate-300 dark:text-slate-700">|</span> <span
+                            class="font-bold">فحص الدم</span>
+                    </h1>
+                    <div class="flex items-center gap-2 mt-1">
+                        <span
+                            class="px-2 py-0.5 bg-primary/10 text-primary text-xs font-bold rounded uppercase tracking-wider">Document
+                            Code</span>
+                        <p class="text-slate-500 dark:text-slate-400 text-sm font-mono font-semibold">BT-2024-001</p>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                    <button
+                        class="flex items-center justify-center rounded-lg h-11 px-6 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-sm font-bold hover:bg-slate-200 dark:hover:bg-slate-700 transition-all">
+                        Cancel / إلغاء
+                    </button>
+                    <button
+                        class="flex items-center justify-center rounded-lg h-11 px-8 bg-primary text-white text-sm font-bold shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all transform hover:-translate-y-0.5 active:translate-y-0">
+                        Save Results / حفظ النتائج
+                    </button>
+                </div>
+            </div>
+            <!-- Header Info Form -->
+            <div
+                class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                <div class="flex flex-col gap-2">
+                    <label
+                        class="flex justify-between items-center text-sm font-semibold text-slate-700 dark:text-slate-300">
+                        <span>Testing Date</span>
+                        <span class="text-xs font-normal opacity-70">التاريخ</span>
+                    </label>
+                    <div class="relative">
+                        <input
+                            class="w-full h-12 rounded-lg border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 focus:ring-primary focus:border-primary text-sm transition-all"
+                            type="date" value="2024-05-24" />
+                    </div>
+                </div>
+                <div class="md:col-span-2 flex flex-col gap-2">
+                    <label
+                        class="flex justify-between items-center text-sm font-semibold text-slate-700 dark:text-slate-300">
+                        <span>General Notes</span>
+                        <span class="text-xs font-normal opacity-70">ملاحظات عامة</span>
+                    </label>
+                    <input
+                        class="w-full h-12 rounded-lg border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 focus:ring-primary focus:border-primary text-sm transition-all"
+                        placeholder="Add observations for this testing batch..." type="text" />
+                </div>
+            </div>
+            <!-- Table Section -->
+            <div
+                class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 shadow-sm overflow-hidden">
+                <div
+                    class="px-6 py-4 border-b border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/50 flex justify-between items-center">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary">biotech</span>
+                        <h3 class="font-bold text-slate-800 dark:text-slate-200">Testing Queue <span
+                                class="text-sm font-normal text-slate-500 ml-2">قائمة الانتظار للفحص</span></h3>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span
+                            class="flex items-center gap-1 text-xs font-medium text-slate-500 bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded">
+                            <span class="size-2 bg-amber-500 rounded-full"></span> Filtered: Under Testing
+                        </span>
+                    </div>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr
+                                class="bg-slate-50 dark:bg-slate-800/30 text-slate-500 dark:text-slate-400 text-xs uppercase tracking-wider font-bold">
+                                <th class="px-6 py-4 border-b border-slate-200 dark:border-slate-800">Component / المكون
+                                </th>
+                                <th class="px-6 py-4 border-b border-slate-200 dark:border-slate-800">Blood Type /
+                                    الفصيلة</th>
+                                <th class="px-6 py-4 border-b border-slate-200 dark:border-slate-800">Bag ID / الرقم
+                                    التعريفي</th>
+                                <th class="px-6 py-4 border-b border-slate-200 dark:border-slate-800">Decision / القرار
+                                </th>
+                                <th class="px-6 py-4 border-b border-slate-200 dark:border-slate-800">Notes / ملاحظات
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+                            <!-- Row 1 -->
+                            <tr class="hover:bg-slate-50/50 dark:hover:bg-slate-800/20 transition-colors">
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center gap-3">
+                                        <div
+                                            class="size-8 rounded-lg bg-red-100 dark:bg-red-900/30 flex items-center justify-center text-red-600">
+                                            <span class="material-symbols-outlined text-xl">opacity</span>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-sm">RBC</p>
+                                            <p class="text-[10px] text-slate-400 uppercase">Red Blood Cells</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span
+                                        class="inline-flex items-center justify-center size-8 rounded-full bg-primary/10 text-primary font-bold text-sm">A+</span>
+                                </td>
+                                <td class="px-6 py-4 font-mono text-sm text-slate-600 dark:text-slate-400">#BB-88902
+                                </td>
+                                <td class="px-6 py-4">
+                                    <select
+                                        class="w-full max-w-[140px] rounded-lg border-slate-200 dark:border-slate-700 bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-400 text-sm font-bold focus:ring-emerald-500 focus:border-emerald-500">
+                                        <option selected="" value="valid">Valid / صالح</option>
+                                        <option value="rejected">Rejected / مرفوض</option>
+                                    </select>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <input
+                                        class="w-full text-xs bg-transparent border-b border-slate-200 dark:border-slate-800 focus:border-primary focus:ring-0 placeholder:italic"
+                                        placeholder="Add specific note..." type="text" />
+                                </td>
+                            </tr>
+                            <!-- Row 2 -->
+                            <tr class="hover:bg-slate-50/50 dark:hover:bg-slate-800/20 transition-colors">
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center gap-3">
+                                        <div
+                                            class="size-8 rounded-lg bg-amber-100 dark:bg-amber-900/30 flex items-center justify-center text-amber-600">
+                                            <span class="material-symbols-outlined text-xl">bloodtype</span>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-sm">Plasma</p>
+                                            <p class="text-[10px] text-slate-400 uppercase">Fresh Frozen</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span
+                                        class="inline-flex items-center justify-center size-8 rounded-full bg-primary/10 text-primary font-bold text-sm">O-</span>
+                                </td>
+                                <td class="px-6 py-4 font-mono text-sm text-slate-600 dark:text-slate-400">#BB-91223
+                                </td>
+                                <td class="px-6 py-4">
+                                    <select
+                                        class="w-full max-w-[140px] rounded-lg border-slate-200 dark:border-slate-700 bg-rose-50 dark:bg-rose-900/20 text-rose-700 dark:text-rose-400 text-sm font-bold focus:ring-rose-500 focus:border-rose-500">
+                                        <option value="valid">Valid / صالح</option>
+                                        <option selected="" value="rejected">Rejected / مرفوض</option>
+                                    </select>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <input
+                                        class="w-full text-xs bg-transparent border-b border-slate-200 dark:border-slate-800 focus:border-primary focus:ring-0 text-rose-600"
+                                        type="text" value="High hemolysis detected" />
+                                </td>
+                            </tr>
+                            <!-- Row 3 -->
+                            <tr class="hover:bg-slate-50/50 dark:hover:bg-slate-800/20 transition-colors">
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center gap-3">
+                                        <div
+                                            class="size-8 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600">
+                                            <span class="material-symbols-outlined text-xl">grain</span>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-sm">Platelets</p>
+                                            <p class="text-[10px] text-slate-400 uppercase">Concentrate</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span
+                                        class="inline-flex items-center justify-center size-8 rounded-full bg-primary/10 text-primary font-bold text-sm">B+</span>
+                                </td>
+                                <td class="px-6 py-4 font-mono text-sm text-slate-600 dark:text-slate-400">#BB-77612
+                                </td>
+                                <td class="px-6 py-4">
+                                    <select
+                                        class="w-full max-w-[140px] rounded-lg border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-sm font-bold focus:ring-primary focus:border-primary">
+                                        <option disabled="" selected="" value="">Select Decision</option>
+                                        <option value="valid">Valid / صالح</option>
+                                        <option value="rejected">Rejected / مرفوض</option>
+                                    </select>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <input
+                                        class="w-full text-xs bg-transparent border-b border-slate-200 dark:border-slate-800 focus:border-primary focus:ring-0 placeholder:italic"
+                                        placeholder="Add specific note..." type="text" />
+                                </td>
+                            </tr>
+                            <!-- Row 4 -->
+                            <tr class="hover:bg-slate-50/50 dark:hover:bg-slate-800/20 transition-colors">
+                                <td class="px-6 py-4">
+                                    <div class="flex items-center gap-3">
+                                        <div
+                                            class="size-8 rounded-lg bg-red-100 dark:bg-red-900/30 flex items-center justify-center text-red-600">
+                                            <span class="material-symbols-outlined text-xl">opacity</span>
+                                        </div>
+                                        <div>
+                                            <p class="font-semibold text-sm">RBC</p>
+                                            <p class="text-[10px] text-slate-400 uppercase">Red Blood Cells</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span
+                                        class="inline-flex items-center justify-center size-8 rounded-full bg-primary/10 text-primary font-bold text-sm">AB-</span>
+                                </td>
+                                <td class="px-6 py-4 font-mono text-sm text-slate-600 dark:text-slate-400">#BB-11200
+                                </td>
+                                <td class="px-6 py-4">
+                                    <select
+                                        class="w-full max-w-[140px] rounded-lg border-slate-200 dark:border-slate-700 bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-400 text-sm font-bold focus:ring-emerald-500 focus:border-emerald-500">
+                                        <option selected="" value="valid">Valid / صالح</option>
+                                        <option value="rejected">Rejected / مرفوض</option>
+                                    </select>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <input
+                                        class="w-full text-xs bg-transparent border-b border-slate-200 dark:border-slate-800 focus:border-primary focus:ring-0 placeholder:italic"
+                                        placeholder="Add specific note..." type="text" />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div
+                    class="px-6 py-4 bg-slate-50 dark:bg-slate-800/50 text-xs text-slate-500 dark:text-slate-400 flex items-center gap-4 border-t border-slate-200 dark:border-slate-800">
+                    <p>Total bags in current session: <span
+                            class="font-bold text-slate-700 dark:text-slate-200">4</span></p>
+                    <p>Pending decision: <span class="font-bold text-amber-600">1</span></p>
+                </div>
+            </div>
+            <!-- Help/Tips Section -->
+            <div
+                class="mt-8 flex items-start gap-4 p-4 rounded-xl bg-primary/5 border border-primary/10 text-primary/80">
+                <span class="material-symbols-outlined">info</span>
+                <div class="text-sm">
+                    <p class="font-bold mb-1 uppercase tracking-tighter">Bilingual Support Note / ملاحظة الدعم ثنائي
+                        اللغة</p>
+                    <p class="leading-relaxed opacity-90">All decisions made in this module are final once saved.
+                        Invalid bags will be automatically moved to the "Disposal" queue. <br class="hidden md:block" />
+                        جميع القرارات المتخذة في هذا النظام نهائية بمجرد الحفظ. سيتم نقل الأكياس المرفوضة تلقائيًا إلى
+                        قائمة "الإتلاف".</p>
+                </div>
+            </div>
+</section>

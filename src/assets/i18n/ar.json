@@ -1,18 +1,75 @@
 {
-    "title": "اهلا بك",
-    "home": "Home",
-    "navbar": {
-        "dashboard": "لوحة القيادة",
-        "donors": "المتبرعون",
-        "donations": "العمليات",
-        "bloodTesting": "فحصوصات الدم",
-        "inventory": "المخزون",
-        "bloodDisposal": "إتلاف الدم",
-        "extraction": "استخلاص",
-        "bloodSupply": "توريد الدم",
-        "request": "طلبات",
-        "bloodIssue": "نقل الدم",
-        "reports": "التقارير",
-        "search": "بحث..."
+  "title": "اهلا بك",
+  "home": "Home",
+  "navbar": {
+    "dashboard": "لوحة القيادة",
+    "donors": "المتبرعون",
+    "donations": "العمليات",
+    "bloodTesting": "فحصوصات الدم",
+    "inventory": "المخزون",
+    "bloodDisposal": "إتلاف الدم",
+    "extraction": "استخلاص",
+    "bloodSupply": "توريد الدم",
+    "request": "طلبات",
+    "bloodIssue": "نقل الدم",
+    "reports": "التقارير",
+    "search": "بحث..."
+  },
+  "sidebar": {
+    "dashboard": "الرئيسية",
+    "inventory": "إدارة المخزون",
+    "bloodDonation": "بيانات التبرع",
+    "donors": "المتبرعون",
+    "bloodRequest": "إدارة طلبات الدم",
+    "bloodIssue": "صرف الدم",
+    "bloodTesting": "فحوصات الدم",
+    "bloodSupply": "توريد الدم",
+    "componentExtraction": "فصل المكونات",
+    "bloodDisposal": "إتلاف الدم",
+    "reports": "التقارير والإحصائيات"
+  },
+  "dashboard": {
+    "title": "لوحة تحكم بنك الدم",
+    "description": "المركز الطبي للمستشفى",
+    "bloodGroup": "الفصيلة",
+    "bloodType": "نوع الدم",
+    "component ": "المكون",
+    "unitsByBloodGroup": "فصائل الدم",
+    "componentDistribution": "التوزيع",
+    "nearExpiry":"قارب على الانتهاء",
+    "unscreened":"لم يتم اختبارها",
+    "addScreeningResults":"إضافة نتائج",
+    "generateWasteReport":"تقرير توليد النفايات",
+    "patientClosedCases":"مرضى غادروا ولديهم رصيد دم",
+
+    "kpi": {
+      "totalUnits": "الإجمالي",
+      "available": "متوفر",
+      "reserved": "محجوز",
+      "expired": "منتهي",
+      "needsDisposal": "يحتاج إتلاف"
+    },
+    "pendingRequests": {
+      "title": "طلبات الدم غير المصروفة",
+      "viewAll": "عرض الكل",
+      "patient": "المريض",
+      "bloodType": "فصيلة",
+      "component": "المكون",
+      "quantity": "الكمية",
+      "date": "التاريخ",
+      "status": "الحالة",
+      "action": "الإجراء",
+      "viewDetails": "عرض"
     }
+  },
+  "donors":{
+    "title":" قائمة المتبرعين",
+    "description":"عرض تفاصيل المتبرع بالدم في النظام الآمن",
+    "export":"تصدير",
+    "newEntry":"إضافة جديد"
+  },
+  
+  "footer": {
+    "copyright": "© 2023 BloodBank Pro Management System. جميع الحقوق محفوظة."
+  }
 }

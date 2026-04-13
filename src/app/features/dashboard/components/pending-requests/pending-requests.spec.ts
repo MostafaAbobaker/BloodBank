@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Footer } from './footer';
+import { PendingRequests } from './pending-requests';
 
-describe('Footer', () => {
-  let component: Footer;
-  let fixture: ComponentFixture<Footer>;
+describe('PendingRequests', () => {
+  let component: PendingRequests;
+  let fixture: ComponentFixture<PendingRequests>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Footer],
+      imports: [PendingRequests],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(Footer);
+    fixture = TestBed.createComponent(PendingRequests);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

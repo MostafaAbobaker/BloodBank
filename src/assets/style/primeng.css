@@ -1,0 +1,39 @@
+.p-datatable-table .p-datatable-thead {
+    --tw-bg-opacity: 1;
+    background-color: rgb(248 250 252 / var(--tw-bg-opacity, 1));
+    --tw-border-opacity: 1;
+    border-color: rgb(241 245 249 / var(--tw-border-opacity, 1));
+    border-bottom-width: 1px;
+    border-style: solid;
+}
+.p-datatable-table .p-datatable-thead th{
+    padding-block: 1rem;
+    background-color: #f8fafc;
+    color: #64748b;
+    font-weight: 900;
+}
+.p-datatable-table tbody tr:hover{
+    background-color: #f8fafc;
+}
+.p-component.p-paginator {
+    background-color: #f8fafc;
+    padding-block: 1rem;
+}
+.p-paginator-pages .p-paginator-page.p-paginator-page-selected {
+    background-color: #d33131;
+    color: #fff;
+    
+}
+.p-paginator-pages .p-ripple.p-paginator-page {
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
+
+.p-component.p-paginator .p-paginator-page,.p-component.p-paginator .p-paginator-next,.p-component.p-paginator .p-paginator-last,.p-component.p-paginator .p-paginator-first,.p-component.p-paginator .p-paginator-prev {
+    height: 30px;
+    width: 30px ;
+    min-width: 30px;
+}

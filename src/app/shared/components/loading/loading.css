@@ -1,0 +1,130 @@
+/* شكل قلب  */
+
+/* .loader {
+  position: relative;
+  width: 40px;
+  height: 60px;
+  animation: heartBeat 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  background: #ff3d00 ;
+  width: 40px;
+  height: 60px;
+  border-radius: 50px 50px 0 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: rotate(45deg);
+  transform-origin: 50% 68%;
+  box-shadow: 5px 4px 5px #0004 inset;
+}
+.loader:after {
+  transform: rotate(-45deg);
+}
+@keyframes heartBeat {
+  0% { transform: scale(0.95) }
+  5% { transform: scale(1.1) }
+  39% { transform: scale(0.85) }
+  45% { transform: scale(1) }
+  60% { transform: scale(0.95) }
+  100% { transform: scale(0.9) }
+}
+*/
+/* شكل انبول عينات دم   */
+
+.loader {
+  width: 24px;
+  height: 80px;
+  display: block;
+  margin: 35px auto 0;
+  border: 1px solid #fff;
+  border-radius: 0 0 50px 50px;
+  position: relative;
+  box-shadow: 0px 0px #ff3d00 inset;
+  background-image: linear-gradient(#ff3d00 100px, transparent 0);
+  background-position: 0px 0px;
+  background-size: 22px 80px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  animation: animloader 6s linear infinite;
+}
+.loader::after {
+  content: '';
+  box-sizing: border-box;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 28px;
+  height: 6px;
+}
+.loader::before {
+  content: '';
+  box-sizing: border-box;
+  left: 0;
+  bottom: -4px;
+  border-radius: 50%;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  animation: animloader1 6s linear infinite;
+}
+
+@keyframes animloader {
+  0% {
+    background-position: 0px 80px;
+  }
+  100% {
+    background-position: 0px 0px;
+  }
+}
+
+@keyframes animloader1 {
+  0% {
+    box-shadow:
+      4px -10px rgba(255, 255, 255, 0),
+      6px 0px rgba(255, 255, 255, 0),
+      8px -15px rgba(255, 255, 255, 0),
+      12px 0px rgba(255, 255, 255, 0);
+  }
+  20% {
+    box-shadow:
+      4px -20px rgba(255, 255, 255, 0),
+      8px -10px rgba(255, 255, 255, 0),
+      10px -30px rgba(255, 255, 255, 0.5),
+      15px -5px rgba(255, 255, 255, 0);
+  }
+  40% {
+    box-shadow:
+      2px -40px rgba(255, 255, 255, 0.5),
+      8px -30px rgba(255, 255, 255, 0.4),
+      8px -60px rgba(255, 255, 255, 0.5),
+      12px -15px rgba(255, 255, 255, 0.5);
+  }
+  60% {
+    box-shadow:
+      4px -60px rgba(255, 255, 255, 0.5),
+      6px -50px rgba(255, 255, 255, 0.4),
+      10px -90px rgba(255, 255, 255, 0.5),
+      15px -25px rgba(255, 255, 255, 0.5);
+  }
+  80% {
+    box-shadow:
+      2px -80px rgba(255, 255, 255, 0.5),
+      4px -70px rgba(255, 255, 255, 0.4),
+      8px -120px rgba(255, 255, 255, 0),
+      12px -35px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    box-shadow:
+      4px -100px rgba(255, 255, 255, 0),
+      8px -90px rgba(255, 255, 255, 0),
+      10px -120px rgba(255, 255, 255, 0),
+      15px -45px rgba(255, 255, 255, 0);
+  }
+}

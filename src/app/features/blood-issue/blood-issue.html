@@ -1,0 +1,235 @@
+<section class="flex flex-col gap-4">
+     <!-- Document Title & Meta -->
+            <div
+                class="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-white dark:bg-slate-900 p-6 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800">
+                <div class="space-y-1">
+                    <div class="flex items-center gap-3">
+                        <h1 class="text-2xl font-black text-slate-900 dark:text-white tracking-tight">Blood Issue / صرف
+                            وحدات الدم</h1>
+                        <span
+                            class="bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-400 px-3 py-1 rounded-full text-xs font-bold animate-pulse flex items-center gap-1">
+                            <span class="material-symbols-outlined text-sm">priority_high</span> Urgent / عاجل
+                        </span>
+                    </div>
+                    <p class="text-slate-500 dark:text-slate-400 text-sm font-medium">Document ID: <span
+                            class="text-slate-900 dark:text-slate-200">ISS-2024-001</span> • Created: 2024-05-20</p>
+                </div>
+                <div class="flex items-center gap-2">
+                    <button
+                        class="px-4 py-2 text-sm font-semibold text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 rounded-lg hover:bg-slate-200 transition-colors">Print
+                        Label</button>
+                    <button
+                        class="px-4 py-2 text-sm font-semibold text-white bg-primary rounded-lg shadow-lg shadow-primary/20 hover:bg-primary/90 transition-all">Complete
+                        Issuance / إتمام الصرف</button>
+                </div>
+            </div>
+            <!-- Form Header Inputs -->
+            <div
+                class="grid grid-cols-1 md:grid-cols-4 gap-4 bg-white dark:bg-slate-900 p-6 rounded-xl border border-slate-200 dark:border-slate-800">
+                <div class="flex flex-col gap-2">
+                    <label class="text-xs font-bold text-slate-500 uppercase tracking-wider">Patient Name / اسم
+                        المريض</label>
+                    <div class="relative">
+                        <span
+                            class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm">person_search</span>
+                        <input
+                            class="w-full pl-9 rounded-lg border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm focus:ring-primary focus:border-primary"
+                            type="text" value="Ahmed Mohamed Ali" />
+                    </div>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label class="text-xs font-bold text-slate-500 uppercase tracking-wider">Request Reference / رقم
+                        الطلب</label>
+                    <input
+                        class="w-full rounded-lg border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm focus:ring-primary focus:border-primary"
+                        type="text" value="REQ-99283" />
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label class="text-xs font-bold text-slate-500 uppercase tracking-wider">Date / التاريخ</label>
+                    <input
+                        class="w-full rounded-lg border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm focus:ring-primary focus:border-primary"
+                        type="date" value="2024-05-20" />
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label class="text-xs font-bold text-slate-500 uppercase tracking-wider">General Notes /
+                        ملاحظات</label>
+                    <textarea
+                        class="w-full rounded-lg border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-sm focus:ring-primary focus:border-primary px-3 py-2"
+                        placeholder="Instructions..." rows="1"></textarea>
+                </div>
+            </div>
+            <!-- Main Content Panels -->
+            <div class="grid grid-cols-1 xl:grid-cols-12 gap-6">
+                <!-- Left Panel: Request Details (Read-only) -->
+                <div class="xl:col-span-5 space-y-4">
+                    <div
+                        class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden">
+                        <div
+                            class="p-4 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between bg-slate-50 dark:bg-slate-800/50">
+                            <h3 class="font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary">assignment</span>
+                                Patient Request Details / تفاصيل الطلب
+                            </h3>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left text-sm">
+                                <thead
+                                    class="bg-slate-50 dark:bg-slate-800 text-slate-500 dark:text-slate-400 font-medium">
+                                    <tr>
+                                        <th class="px-4 py-3">Component</th>
+                                        <th class="px-4 py-3">Type</th>
+                                        <th class="px-4 py-3 text-center">Req.</th>
+                                        <th class="px-4 py-3 text-center">Iss.</th>
+                                        <th class="px-4 py-3 text-center">Rem.</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+                                    <tr>
+                                        <td class="px-4 py-4 font-semibold text-slate-700 dark:text-slate-300">Packed
+                                            RBCs</td>
+                                        <td class="px-4 py-4"><span
+                                                class="px-2 py-1 rounded bg-primary/10 text-primary font-bold">O+</span>
+                                        </td>
+                                        <td class="px-4 py-4 text-center font-medium">3</td>
+                                        <td class="px-4 py-4 text-center font-medium">1</td>
+                                        <td class="px-4 py-4 text-center"><span
+                                                class="bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full text-xs font-bold">2
+                                                Units</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-4 py-4 font-semibold text-slate-700 dark:text-slate-300">Fresh
+                                            Frozen Plasma</td>
+                                        <td class="px-4 py-4"><span
+                                                class="px-2 py-1 rounded bg-primary/10 text-primary font-bold">O+</span>
+                                        </td>
+                                        <td class="px-4 py-4 text-center font-medium">2</td>
+                                        <td class="px-4 py-4 text-center font-medium">0</td>
+                                        <td class="px-4 py-4 text-center"><span
+                                                class="bg-amber-100 text-amber-700 px-2 py-0.5 rounded-full text-xs font-bold">2
+                                                Units</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div
+                        class="p-4 rounded-lg bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 flex items-start gap-3">
+                        <span class="material-symbols-outlined text-blue-600 dark:text-blue-400 mt-0.5">info</span>
+                        <div>
+                            <p class="text-xs font-bold text-blue-800 dark:text-blue-300 uppercase">Issuance Logic /
+                                منطق الصرف</p>
+                            <p class="text-sm text-blue-700 dark:text-blue-400">System prioritizes bags based on <span
+                                    class="font-bold">FIFO</span> (First In, First Out) by Expiration Date to minimize
+                                wastage.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Panel: Issue Grid (Interactive) -->
+                <div class="xl:col-span-7 space-y-4">
+                    <div
+                        class="bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden flex flex-col h-full">
+                        <div
+                            class="p-4 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between bg-slate-50 dark:bg-slate-800/50">
+                            <h3 class="font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary">inventory_2</span>
+                                Issue Blood Bags / صرف أكياس الدم
+                            </h3>
+                            <button
+                                class="flex items-center gap-1 text-primary hover:text-primary/80 text-sm font-bold bg-white dark:bg-slate-700 px-3 py-1.5 rounded-lg border border-primary/20 transition-all">
+                                <span class="material-symbols-outlined text-sm">add_circle</span> Add Bag / إضافة كيس
+                            </button>
+                        </div>
+                        <div class="p-0 overflow-x-auto flex-1">
+                            <table class="w-full text-left text-sm border-collapse">
+                                <thead
+                                    class="bg-slate-50 dark:bg-slate-800 text-slate-500 dark:text-slate-400 font-medium">
+                                    <tr>
+                                        <th class="px-4 py-3 w-48">Barcode / باركود</th>
+                                        <th class="px-4 py-3">Component</th>
+                                        <th class="px-4 py-3">Type</th>
+                                        <th class="px-4 py-3">Expiry Date</th>
+                                        <th class="px-4 py-3">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+                                    <!-- Row 1 -->
+                                    <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+                                        <td class="px-4 py-3">
+                                            <div class="relative group">
+                                                <input
+                                                    class="w-full pr-8 rounded-lg border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-xs font-mono focus:ring-primary focus:border-primary"
+                                                    type="text" value="B-20240912-A1" />
+                                                <span
+                                                    class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-slate-400 text-sm cursor-pointer">barcode_scanner</span>
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <select
+                                                class="w-full rounded-lg border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-xs focus:ring-primary focus:border-primary">
+                                                <option>Packed RBCs</option>
+                                                <option>FFP</option>
+                                                <option>Platelets</option>
+                                            </select>
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <span class="font-bold text-slate-700 dark:text-slate-300">O+</span>
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <input
+                                                class="w-full border-none bg-transparent text-xs text-slate-500 cursor-not-allowed"
+                                                readonly="" type="text" value="2024-06-15" />
+                                        </td>
+                                        <td class="px-4 py-3">
+                                            <button class="text-slate-400 hover:text-red-500 transition-colors">
+                                                <span class="material-symbols-outlined">delete</span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <!-- Row 2 -->
+                                    <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/30 transition-colors">
+                                        <td class="px-4 py-3">
+                                            <div class="relative group">
+                                                <input
+                                                    class="w-full pr-8 rounded-lg border-primary/30 dark:border-primary/20 bg-primary/5 dark:bg-primary/10 text-xs font-mono focus:ring-primary focus:border-primary border-dashed"
+                                                    placeholder="Scan or select unit..." type="text" />
+                                                <span
+                                                    class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-primary text-sm cursor-pointer">search</span>
+                                            </div>
+                                        </td>
+                                        <td class="px-4 py-3 text-slate-400 italic">Auto-filled</td>
+                                        <td class="px-4 py-3 text-slate-400 italic">Auto-filled</td>
+                                        <td class="px-4 py-3 text-slate-400 italic">-</td>
+                                        <td class="px-4 py-3">
+                                            <button class="text-slate-400 hover:text-red-500 transition-colors">
+                                                <span class="material-symbols-outlined">delete</span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div
+                            class="p-6 bg-slate-50 dark:bg-slate-800/50 border-t border-slate-100 dark:border-slate-800 flex flex-col md:flex-row items-center justify-between gap-4">
+                            <div class="flex items-center gap-6">
+                                <div class="text-center">
+                                    <p class="text-[10px] uppercase font-bold text-slate-400">Total Units</p>
+                                    <p class="text-xl font-black text-slate-900 dark:text-white">01</p>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-[10px] uppercase font-bold text-slate-400">Pending</p>
+                                    <p class="text-xl font-black text-primary">04</p>
+                                </div>
+                            </div>
+                            <div class="flex gap-3 w-full md:w-auto">
+                                <button
+                                    class="flex-1 md:flex-none px-6 py-2.5 rounded-lg border border-slate-300 dark:border-slate-600 font-bold text-slate-600 dark:text-slate-300 hover:bg-slate-100 transition-all text-sm">Cancel
+                                    / إلغاء</button>
+                                <button
+                                    class="flex-1 md:flex-none px-8 py-2.5 rounded-lg bg-primary text-white font-bold shadow-lg shadow-primary/30 hover:brightness-110 active:scale-[0.98] transition-all text-sm">Finalize
+                                    / اعتماد الصرف</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>

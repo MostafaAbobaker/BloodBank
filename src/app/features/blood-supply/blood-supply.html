@@ -1,0 +1,247 @@
+<section>
+    <!-- Page Title & Main Actions -->
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-8">
+                <div>
+                    <h2 class="text-3xl font-black text-slate-900 dark:text-white flex items-center gap-3">
+                        New Supply Entry <span class="text-primary">|</span> إدخال توريد جديد
+                    </h2>
+                    <p class="text-slate-500 dark:text-slate-400 mt-1 font-medium">
+                        Reference ID: <span class="font-bold text-primary">BS-2023-10-24-001</span> | رقم المرجع
+                    </p>
+                </div>
+                <div class="flex gap-3">
+                    <button
+                        class="px-6 py-2.5 rounded-lg border border-slate-200 dark:border-slate-700 font-bold text-sm hover:bg-slate-50 transition-all">
+                        Cancel | إلغاء
+                    </button>
+                    <button
+                        class="px-6 py-2.5 rounded-lg bg-primary text-white font-bold text-sm shadow-lg shadow-primary/20 hover:brightness-110 transition-all flex items-center gap-2">
+                        <span class="material-symbols-outlined text-sm">save</span>
+                        Save Entry | حفظ البيانات
+                    </button>
+                </div>
+            </div>
+            <!-- General Information Section -->
+            <section
+                class="bg-white dark:bg-background-dark border border-slate-200 dark:border-slate-800 rounded-xl p-6 mb-8 shadow-sm">
+                <div class="flex items-center gap-2 mb-6 text-primary">
+                    <span class="material-symbols-outlined">info</span>
+                    <h3 class="font-bold text-lg uppercase tracking-wider">General Information | معلومات عامة</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="space-y-2">
+                        <label class="block text-sm font-bold text-slate-700 dark:text-slate-300">Document Code | كود
+                            المستند</label>
+                        <input
+                            class="w-full rounded-lg border-slate-200 bg-slate-50 dark:bg-slate-800 dark:border-slate-700 text-slate-500 font-mono"
+                            readonly="" type="text" value="BS-ORD-9921" />
+                    </div>
+                    <div class="space-y-2">
+                        <label class="block text-sm font-bold text-slate-700 dark:text-slate-300">Date | التاريخ</label>
+                        <input class="w-full rounded-lg border-slate-200 dark:bg-slate-800 dark:border-slate-700"
+                            type="date" value="2023-10-24" />
+                    </div>
+                    <div class="space-y-2">
+                        <label class="block text-sm font-bold text-slate-700 dark:text-slate-300">Blood Source | مصدر
+                            الدم</label>
+                        <select class="w-full rounded-lg border-slate-200 dark:bg-slate-800 dark:border-slate-700">
+                            <option>Central Blood Bank | بنك الدم المركزي</option>
+                            <option>External Hospital | مستشفى خارجي</option>
+                            <option>Mobile Drive | حملة تبرع متنقلة</option>
+                            <option>Emergency Transfer | تحويل طارئ</option>
+                        </select>
+                    </div>
+                    <div class="space-y-2">
+                        <label class="block text-sm font-bold text-slate-700 dark:text-slate-300">Patient (Optional) |
+                            المريض (اختياري)</label>
+                        <input class="w-full rounded-lg border-slate-200 dark:bg-slate-800 dark:border-slate-700"
+                            placeholder="ID or Name | الاسم أو الرقم" type="text" />
+                    </div>
+                </div>
+                <div class="mt-6 space-y-2">
+                    <label class="block text-sm font-bold text-slate-700 dark:text-slate-300">General Notes | ملاحظات
+                        عامة</label>
+                    <textarea class="w-full rounded-lg border-slate-200 dark:bg-slate-800 dark:border-slate-700"
+                        placeholder="Add any special instructions... | إضافة تعليمات خاصة..." rows="2"></textarea>
+                </div>
+            </section>
+            <!-- Details Entry Form -->
+            <section
+                class="bg-white dark:bg-background-dark border border-slate-200 dark:border-slate-800 rounded-xl overflow-hidden shadow-sm">
+                <div class="p-6 border-b border-slate-100 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/30">
+                    <div class="flex items-center gap-2 mb-4 text-primary">
+                        <span class="material-symbols-outlined">add_circle</span>
+                        <h3 class="font-bold text-lg uppercase tracking-wider">Bag Details | تفاصيل الأكياس</h3>
+                    </div>
+                    <!-- Entry Row -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-4 items-end">
+                        <div class="space-y-2 lg:col-span-1">
+                            <label class="block text-xs font-bold text-slate-500 uppercase">Component | المكون</label>
+                            <select
+                                class="w-full rounded-lg border-slate-200 dark:bg-slate-800 dark:border-slate-700 text-sm">
+                                <option>Whole Blood</option>
+                                <option>RBC (Packed Cells)</option>
+                                <option>Plasma (FFP)</option>
+                                <option>Platelets</option>
+                                <option>Cryoprecipitate</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-xs font-bold text-slate-500 uppercase">Blood Type | الفصيلة</label>
+                            <select
+                                class="w-full rounded-lg border-slate-200 dark:bg-slate-800 dark:border-slate-700 text-sm">
+                                <option>A+</option>
+                                <option>A-</option>
+                                <option>B+</option>
+                                <option>B-</option>
+                                <option>AB+</option>
+                                <option>AB-</option>
+                                <option>O+</option>
+                                <option>O-</option>
+                            </select>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-xs font-bold text-slate-500 uppercase">Barcode | الباركود</label>
+                            <div
+                                class="flex items-center bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg px-2">
+                                <span class="material-symbols-outlined text-slate-400 text-lg">barcode_scanner</span>
+                                <input class="border-none focus:ring-0 text-sm w-full py-2" placeholder="Scan bag ID"
+                                    type="text" />
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="block text-xs font-bold text-slate-500 uppercase">Expiry | الصلاحية</label>
+                            <input
+                                class="w-full rounded-lg border-slate-200 dark:bg-slate-800 dark:border-slate-700 text-sm"
+                                type="date" />
+                        </div>
+                        <div class="space-y-2 lg:col-span-1">
+                            <label class="block text-xs font-bold text-slate-500 uppercase">Notes | ملاحظات</label>
+                            <input
+                                class="w-full rounded-lg border-slate-200 dark:bg-slate-800 dark:border-slate-700 text-sm"
+                                placeholder="Bag specific" type="text" />
+                        </div>
+                        <button
+                            class="bg-primary text-white rounded-lg py-2.5 font-bold text-sm hover:bg-primary/90 transition-all flex items-center justify-center gap-2">
+                            <span class="material-symbols-outlined text-base">add</span>
+                            Add | إضافة
+                        </button>
+                    </div>
+                </div>
+                <!-- Bags Table -->
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr
+                                class="bg-slate-50 dark:bg-slate-800/50 border-b border-slate-200 dark:border-slate-800">
+                                <th class="px-6 py-4 text-xs font-bold text-slate-500 uppercase tracking-wider">Type |
+                                    النوع</th>
+                                <th class="px-6 py-4 text-xs font-bold text-slate-500 uppercase tracking-wider">Group |
+                                    الفصيلة</th>
+                                <th class="px-6 py-4 text-xs font-bold text-slate-500 uppercase tracking-wider">ID |
+                                    الكود</th>
+                                <th class="px-6 py-4 text-xs font-bold text-slate-500 uppercase tracking-wider">Expiry |
+                                    الانتهاء</th>
+                                <th class="px-6 py-4 text-xs font-bold text-slate-500 uppercase tracking-wider">Status |
+                                    الحالة</th>
+                                <th
+                                    class="px-6 py-4 text-xs font-bold text-slate-500 uppercase tracking-wider text-right">
+                                    Action | إجراء</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100 dark:divide-slate-800">
+                            <tr>
+                                <td class="px-6 py-4">
+                                    <span class="font-semibold text-slate-700 dark:text-slate-200">RBC (Packed)</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span
+                                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary font-black border border-primary/20">A+</span>
+                                </td>
+                                <td class="px-6 py-4 font-mono text-sm text-slate-600 dark:text-slate-400">#BG-00192837
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span class="text-sm">2023-11-15</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span
+                                        class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400">
+                                        <span class="h-1.5 w-1.5 rounded-full bg-green-500"></span>
+                                        Available | متاح
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4 text-right">
+                                    <button class="text-slate-400 hover:text-primary transition-colors">
+                                        <span class="material-symbols-outlined">delete</span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4">
+                                    <span class="font-semibold text-slate-700 dark:text-slate-200">Plasma</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span
+                                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary font-black border border-primary/20">O-</span>
+                                </td>
+                                <td class="px-6 py-4 font-mono text-sm text-slate-600 dark:text-slate-400">#BG-00192838
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span class="text-sm">2023-12-01</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span
+                                        class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400">
+                                        <span class="h-1.5 w-1.5 rounded-full bg-green-500"></span>
+                                        Available | متاح
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4 text-right">
+                                    <button class="text-slate-400 hover:text-primary transition-colors">
+                                        <span class="material-symbols-outlined">delete</span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="px-6 py-4">
+                                    <span class="font-semibold text-slate-700 dark:text-slate-200">Platelets</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span
+                                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary font-black border border-primary/20">B+</span>
+                                </td>
+                                <td class="px-6 py-4 font-mono text-sm text-slate-600 dark:text-slate-400">#BG-00192839
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span class="text-sm text-primary font-bold">2023-10-29</span>
+                                </td>
+                                <td class="px-6 py-4">
+                                    <span
+                                        class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-bold bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400">
+                                        <span class="h-1.5 w-1.5 rounded-full bg-green-500"></span>
+                                        Available | متاح
+                                    </span>
+                                </td>
+                                <td class="px-6 py-4 text-right">
+                                    <button class="text-slate-400 hover:text-primary transition-colors">
+                                        <span class="material-symbols-outlined">delete</span>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div
+                    class="p-6 bg-slate-50 dark:bg-slate-800/50 flex justify-between items-center border-t border-slate-200 dark:border-slate-800">
+                    <span class="text-sm font-medium text-slate-500">Total Units Added: <span
+                            class="font-bold text-slate-900 dark:text-white">3</span></span>
+                    <div class="flex gap-2">
+                        <button
+                            class="px-4 py-2 bg-white dark:bg-slate-700 border border-slate-200 dark:border-slate-600 rounded-lg text-xs font-bold flex items-center gap-2">
+                            <span class="material-symbols-outlined text-sm">print</span>
+                            Print Labels | طباعة الملصقات
+                        </button>
+                    </div>
+                </div>
+            </section>
+</section>

@@ -1,1 +1,20 @@
-<p>footer works!</p>
+<!-- Footer / Language Toggle -->
+<footer class="mt-auto px-10 py-6 border-t border-slate-200 dark:border-slate-800 text-center">
+  <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+    <p class="text-xs text-slate-400 font-medium">
+      {{ 'footer.copyright' | translate }}
+    </p>
+    <div class="flex items-center gap-4">
+      <button
+        class="text-xs font-bold px-3 py-1 rounded  hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
+        [class]="lang === 'en' ? 'bg-slate-200 dark:bg-slate-800 ' : 'text-slate-400'" (click)="toggleLanguage('en')">
+        ENGLISH
+      </button>
+      <button
+        class="text-xs font-bold px-3 py-1 rounded  hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
+        [class]="lang === 'ar' ? 'bg-slate-200 dark:bg-slate-800 ' : 'text-slate-400'" (click)="toggleLanguage('ar')">
+        العربية
+      </button>
+    </div>
+  </div>
+</footer>
