@@ -63,7 +63,36 @@
     "title":"Donor List",
     "description":"Show the details of the blood donor in the secure system",
     "export":"Export",
-    "newEntry":"New Entry"
+    "newEntry":"New Entry",
+    "registration":{
+      "title":"Donor Registration",
+      "description":"Register a new blood donor in the secure system",
+      "donorCode":"Donor Code",
+      "personalInformation":"Personal Information",
+      "nameAr":"Name (Arabic)",
+      "nameArDesc":"Enter the full name in Arabic language",
+      "nameEn":"Name (English)",
+      "id":"National ID",
+      "birthDate":"Date of Birth",
+      "age":"Age must be 18 or older",
+      "gender":"Gender",
+      "occupation":"Occupation",
+      "selectGender":"Select Gender",
+      "male":"Male",
+      "female":"Female",
+      "contactInformation":"Contact Information",
+      "mobile":"Mobile Number",
+      "phone":"Phone (Landline)",
+      "email":"Email Address",
+      "address":"Residential Address",
+      "medicalInformation":"Medical Information",
+      "bloodType":"Blood Type",
+      "selectType":"Select Type",
+      "medicalHistory":"Medical History",
+      "additionalNotes":"Additional Notes",
+      "cubmit":"Clear",
+      "Register":"Register Donor"
+    }
   },
   "footer": {
     "copyright": "© 2023 BloodBank Pro Management System. All Rights Reserved."

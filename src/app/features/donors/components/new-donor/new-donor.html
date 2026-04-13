@@ -2,23 +2,21 @@
 <div class="mb-8 flex flex-col md:flex-row md:items-end justify-between gap-4">
     <div class="space-y-1">
         <h1 class="text-3xl md:text-4xl font-black tracking-tight text-slate-900 dark:text-slate-100">
-            Donor Registration <span class="text-primary">|</span> تسجيل
-            متبرع
+            {{"donors.registration.title" | translate}}
         </h1>
         <p class="text-slate-500 dark:text-slate-400 text-base">
-            Register a new blood donor in the secure system | تسجيل متبرع
-            جديد في النظام الآمن
+           {{"donors.registration.description" | translate}}
         </p>
     </div>
     <div class="bg-primary/10 border border-primary/20 px-4 py-3 rounded-xl flex items-center gap-3">
         <span class="material-symbols-outlined text-primary">fingerprint</span>
         <div class="flex flex-col">
-            <span class="text-[10px] uppercase font-bold text-primary tracking-wider">Donor Code | كود المتبرع</span>
+            <span class="text-[10px] uppercase font-bold text-primary tracking-wider">{{"donors.registration.donorCode" | translate}}</span>
             <span class="text-lg font-mono font-bold text-slate-800 dark:text-slate-200">DNR-2024-001</span>
         </div>
     </div>
 </div>
-<form class="space-y-8">
+<form class="space-y-8" (submit)="submit($event)">
     <!-- Section 1: Personal Information -->
     <div
         class="bg-white dark:bg-slate-900 rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 overflow-hidden">
@@ -26,25 +24,25 @@
             class="bg-slate-50 dark:bg-slate-800/50 px-6 py-4 border-b border-slate-200 dark:border-slate-800 flex items-center gap-3">
             <span class="material-symbols-outlined text-primary">person</span>
             <h2 class="text-lg font-bold">
-                Personal Information | البيانات الشخصية
+                {{"donors.registration.personalInformation" | translate}}
             </h2>
         </div>
         <div class="p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Name Arabic -->
             <div class="flex flex-col gap-2">
                 <label class="flex justify-between items-center text-sm font-semibold">
-                    <span>Name (Arabic) <span class="text-primary">*</span></span>
-                    <span class="text-primary">الاسم (بالعربية)</span>
+                    <span>{{"donors.registration.nameAr" | translate}} <span class="text-primary">*</span></span>
                 </label>
-                <input
+                <input pInputText  type="text" pSize="large" placeholder="Large" dir="rtl" [placeholder]="'donors.registration.nameArDesc' | translate"/>
+
+                <!-- <input
                     class="form-input rounded-lg border border-slate-300 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary h-12"
-                    dir="rtl" placeholder="أدخل الاسم بالكامل" required="" type="text" />
+                    dir="rtl" [placeholder]="'donors.registration.nameArDesc' | translate" required="" type="text"  /> -->
             </div>
             <!-- Name English -->
             <div class="flex flex-col gap-2">
                 <label class="flex justify-between items-center text-sm font-semibold">
-                    <span>Name (English)</span>
-                    <span>الاسم (بالإنجليزية)</span>
+                    <span>{{"donors.registration.nameEn" | translate}}</span>
                 </label>
                 <input
                     class="form-input rounded-lg border border-slate-300 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary h-12"
@@ -53,8 +51,7 @@
             <!-- National ID -->
             <div class="flex flex-col gap-2">
                 <label class="flex justify-between items-center text-sm font-semibold">
-                    <span>National ID <span class="text-primary">*</span></span>
-                    <span class="text-primary">الرقم القومي</span>
+                    <span>{{"donors.registration.id" | translate}} <span class="text-primary">*</span></span>
                 </label>
                 <input
                     class="form-input rounded-lg border border-slate-300 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary h-12"
@@ -63,14 +60,13 @@
             <!-- Birth Date -->
             <div class="flex flex-col gap-2">
                 <label class="flex justify-between items-center text-sm font-semibold">
-                    <span>Birth Date <span class="text-primary">*</span></span>
-                    <span class="text-primary">تاريخ الميلاد</span>
+                    <span>{{"donors.registration.birthDate" | translate}} <span class="text-primary">*</span></span>
                 </label>
                 <input
                     class="form-input rounded-lg border border-slate-300 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary h-12"
                     required="" type="date" />
                 <p class="text-[11px] text-primary font-medium">
-                    Age must be 18 or older / يجب أن يكون العمر 18 عاماً أو أكثر
+                    {{"donors.registration.age" | translate}}
                 </p>
             </div>
             <!-- Gender -->

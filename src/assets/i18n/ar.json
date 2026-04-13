@@ -66,7 +66,36 @@
     "title":" قائمة المتبرعين",
     "description":"عرض تفاصيل المتبرع بالدم في النظام الآمن",
     "export":"تصدير",
-    "newEntry":"إضافة جديد"
+    "newEntry":"إضافة جديد",
+    "registration":{
+      "title":"تسجيل متبرع",
+      "description":"تسجيل متبرع جديد في النظام الآمن",
+      "donorCode":"كود المتبرع",
+      "personalInformation":"البيانات الشخصية",
+      "nameAr":"الاسم (بالعربية)",
+      "nameArDesc":"أدخل الاسم بالكامل",
+      "nameEn":"الاسم (إنجليزية)",
+      "id":"الرقم القومي",
+      "birthDate":"تاريخ الميلاد",
+      "age":"يجب أن يكون العمر 18 عاماً أو أكثر",
+      "gender":"الجنس",
+      "occupation":"المهنة",
+      "selectGender":"اختر الجنس",
+      "male":"ذكر",
+      "female":"أنثى",
+      "contactInformation":"معلومات التواصل",
+      "mobile":"رقم الجوال",
+      "phone":"الهاتف الأرضي",
+      "email":"البريد الإلكتروني",
+      "address":"العنوان",
+      "medicalInformation":"البيانات الطبية",
+      "bloodType":"فصيلة الدم",
+      "selectType":"اختر الفصيلة",
+      "medicalHistory":"التاريخ الطبي",
+      "additionalNotes":"ملاحظات إضافية",
+      "cubmit":"مسح",
+      "Register":"تسجيل متبرع"
+    }
   },
   
   "footer": {
